@@ -1,0 +1,26 @@
+---
+- hosts: master
+  tasks:
+    - name: Create Apache Nifi installation directory
+      file:
+        path: /opt/apache_nifi/
+        state: directory
+        mode: '0775'
+      become: true
+      become_user: root  
+
+    - name: Download nifi-1.8.0-bin.tar.gz
+      get_url:
+        url: https://archive.apache.org/dist/nifi/1.8.0/nifi-1.8.0-bin.tar.gz
+        dest: /opt/apache_nifi/nifi-1.8.0-bin.tar.gz
+        mode: '0775'
+      become: true
+      become_user: root
+
+    - name: Unzip nifi-1.8.0-bin.tar.gz
+      unarchive:
+        src: /opt/apache_nifi/nifi-1.8.0-bin.tar.gz
+        dest: /opt/apache_nifi/
+        remote_src: yes
+      become: true
+      become_user: root

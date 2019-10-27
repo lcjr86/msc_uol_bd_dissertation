@@ -1,0 +1,12 @@
+---
+- hosts: master
+  tasks:
+    - name: Set to 755, files and folders at '/opt/hadoop'
+      file:
+        dest: /opt/hadoop
+        owner: root
+        group: root
+        mode: '0775'
+        recurse: yes
+      become: true
+      become_user: root

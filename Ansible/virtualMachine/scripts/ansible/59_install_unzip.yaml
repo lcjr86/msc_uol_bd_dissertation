@@ -1,0 +1,9 @@
+---
+- hosts: cluster
+  tasks:
+
+    - name: Install Unzip
+      apt:
+        name: unzip
+      become: true
+      become_user: root

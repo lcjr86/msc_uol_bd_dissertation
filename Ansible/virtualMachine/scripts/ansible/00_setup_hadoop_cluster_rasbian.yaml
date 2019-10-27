@@ -1,0 +1,27 @@
+---
+- import_playbook: 10_create_installation_and_HDFS_directories.yaml
+- import_playbook: 12_add_user_permission_HDFS_directories__pi.yaml
+- import_playbook: 20_install_java.yaml
+- import_playbook: 41_setup_connectivity__raspbian.yaml
+- import_playbook: 53_add_environment_variables__raspbian.yaml
+- import_playbook: 52_add_environment_variables__pi.yaml
+- import_playbook: 59_install_unzip.yaml
+- import_playbook: 62_install_hadoop_2-7-7_namenode.yaml
+- import_playbook: 71_add_master_slave_files__raspbian.yaml
+- import_playbook: 80_setup_HDFS.yaml
+- import_playbook: 89_change_hadoop_files_permission.yaml
+- import_playbook: 93_copy_basic_config_to_slaves__raspbian.yaml
+- import_playbook: 103_copy_hadoop_2-7-7_config_files.yaml
+- import_playbook: 111_format_namenode__raspbian.yaml
+- import_playbook: 116_config_hadoop-env_JAVA_HOME__raspbian.yaml
+- import_playbook: 120_start_service.yaml
+- import_playbook: 140_install_spark_2-2-0.yaml
+- import_playbook: 150_config_spark-defaults.yaml
+- import_playbook: 160_create_spark_logs_folder.yaml
+- import_playbook: 170_install_Mosquitto_Broker.yaml
+- import_playbook: 180_install_apache_kafka_2-3-0.yaml
+- import_playbook: 190_start_zookeeper_and_kafka.yaml
+- import_playbook: 210_install_prometheus_node_exporter.yaml
+#- import_playbook: 200_create_kafka_topic.yaml
+#- import_playbook: _install_mqtt_kafka_bridge
+#- import_playbook: _start_mqtt_kafka_bridge

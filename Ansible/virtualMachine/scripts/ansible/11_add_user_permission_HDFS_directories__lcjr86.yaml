@@ -1,0 +1,9 @@
+---
+- hosts: cluster
+  tasks:
+    - name: Add lcjr86 to the group associated
+      user:
+        name: lcjr86
+        group: root
+      become: true
+      become_user: root

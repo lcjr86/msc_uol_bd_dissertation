@@ -1,0 +1,34 @@
+---
+- hosts: master
+  tasks:
+    - name: Download hadoop-3.2.0.tar.gz
+      get_url:
+        url: http://www-us.apache.org/dist/hadoop/common/hadoop-3.2.0/hadoop-3.2.0.tar.gz
+        dest: /opt/hadoop/hadoop-3.2.0.tar.gz
+        mode: '0775'
+      become: true
+      become_user: root
+
+    - name: Unzip hadoop-3.2.0.tar.gz
+      unarchive:
+        src: /opt/hadoop/hadoop-3.2.0.tar.gz
+        dest: /opt/hadoop/
+        remote_src: yes
+      become: true
+      become_user: root
+
+    - name: Create directory /opt/hadoop/hadoop
+      file:
+        path: /opt/hadoop/hadoop
+        state: directory
+        mode: '0775'
+      become: true
+      become_user: root
+
+    - name: Move files from 'hadoop-3.2.0' to 'hadoop' folder
+      copy:
+        remote_src: yes
+        src: /opt/hadoop/hadoop-3.2.0/
+        dest: /opt/hadoop/hadoop/
+      become: true
+      become_user: root

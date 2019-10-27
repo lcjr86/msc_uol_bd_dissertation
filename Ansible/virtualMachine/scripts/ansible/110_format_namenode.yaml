@@ -1,0 +1,8 @@
+---
+- hosts: master
+  tasks:
+    - name: Run 'hdfs namenode -format -force'
+      #shell: /$HADOOP_HOME/bin/hdfs namenode -format
+      shell: echo "Y" | /opt/hadoop/hadoop/bin/hdfs namenode -format -y
+      environment:
+        JAVA_HOME: /usr/lib/jvm/java-1.8.0-openjdk-amd64

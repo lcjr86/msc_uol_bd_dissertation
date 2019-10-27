@@ -1,0 +1,30 @@
+---
+- hosts: cluster
+  tasks:
+    - name: Create 'hdfs' folder
+      file:
+        path: /opt/hadoop_tmp/hdfs/
+        state: directory
+        mode: '0775'
+      become: true
+      become_user: root
+
+- hosts: master
+  tasks:
+    - name: Create 'hdfs/namenode' folder
+      file:
+        path: /opt/hadoop_tmp/hdfs/namenode/
+        state: directory
+        mode: '0775'
+      become: true
+      become_user: root
+
+- hosts: slaves
+  tasks:
+    - name: Create 'hdfs/datanode' folder
+      file:
+        path: /opt/hadoop_tmp/hdfs/datanode/
+        state: directory
+        mode: '0775'
+      become: true
+      become_user: root

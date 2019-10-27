@@ -1,0 +1,16 @@
+---
+- hosts: cluster
+  tasks:
+    - name: Update /etc/ssh/sshd_config for root SSH
+      blockinfile:
+        path: /etc/ssh/sshd_config
+        block: |
+          PermitRootLogin yes
+          PasswordAuthentication yes
+      become: true
+      become_user: root
+
+    - name: Restart SSH service
+      shell: service sshd reload
+      become: true
+      become_user: root

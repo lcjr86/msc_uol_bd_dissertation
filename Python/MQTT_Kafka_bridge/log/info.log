@@ -1,0 +1,36 @@
+2019-10-20 14:56:32,980 root         INFO     number_topics|2
+2019-10-20 14:56:32,981 root         INFO     mqtt_broker|192.168.56.103
+2019-10-20 14:56:32,981 root         INFO     mqtt_port|1883
+2019-10-20 14:56:32,981 root         INFO     mqtt_topic_structure|sensor/[SENSOR_ID]
+2019-10-20 14:56:32,981 root         INFO     kafka_broker|192.168.56.103
+2019-10-20 14:56:32,981 root         INFO     kafka_port|9092
+2019-10-20 14:56:32,981 root         INFO     kafka_topic_structure|sensor.[SENSOR_ID]
+2019-10-20 14:56:32,981 root         INFO     mqtt_topic[0]|sensor/1
+2019-10-20 14:56:32,981 root         INFO     kafka_topic[0]|sensor.1
+2019-10-20 14:56:32,981 root         INFO     mqtt_broker_client[0] created
+2019-10-20 14:56:32,982 root         INFO     mqtt_topic[1]|sensor/2
+2019-10-20 14:56:32,982 root         INFO     kafka_topic[1]|sensor.2
+2019-10-20 14:56:32,982 root         INFO     mqtt_broker_client[1] created
+2019-10-20 14:56:32,996 root         INFO     mqtt_broker_client[0].connect executed
+2019-10-20 14:56:32,997 root         INFO     mqtt_broker_client[0].subscribe executed
+2019-10-20 14:56:33,109 root         INFO     KafkaProducer[0] executed
+2019-10-20 14:56:33,111 root         INFO     mqtt_broker_client[1].connect executed
+2019-10-20 14:56:33,111 root         INFO     mqtt_broker_client[1].subscribe executed
+2019-10-20 14:56:33,222 root         INFO     KafkaProducer[1] executed
+2019-10-20 14:56:33,223 root         INFO     mqtt_broker_client[0].loop_start executed
+2019-10-20 14:56:33,223 root         INFO     mqtt_broker_client.loop_stop executed
+2019-10-20 14:56:33,225 root         INFO     mqtt_broker_client[1].loop_start executed
+2019-10-20 14:56:34,229 root         INFO     mqtt_broker_client.loop_stop executed
+2019-10-20 14:56:34,231 root         INFO     mqtt_broker_client[0].loop_start executed
+2019-10-20 14:56:35,236 root         INFO     mqtt_broker_client.loop_stop executed
+2019-10-20 14:56:35,237 root         INFO     mqtt_broker_client[1].loop_start executed
+2019-10-20 14:56:36,240 root         INFO     mqtt_broker_client.loop_stop executed
+2019-10-20 14:56:36,241 root         INFO     mqtt_broker_client[0].loop_start executed
+2019-10-20 14:56:37,245 root         INFO     mqtt_broker_client.loop_stop executed
+2019-10-20 14:56:37,245 root         INFO     mqtt_broker_client[1].loop_start executed
+2019-10-20 14:56:37,928 root         INFO     mqtt_broker_client.loop_stop executed
+2019-10-20 14:56:37,929 root         INFO     mqtt_broker_client[0].loop_start executed
+2019-10-20 14:56:37,929 root         INFO     mqtt_broker_client.loop_stop executed
+2019-10-20 14:56:37,929 root         INFO     mqtt_broker_client[1].loop_start executed
+2019-10-20 14:56:37,929 root         INFO     subscribe_message|b'2019-10-20|14:56:37|6'
+2019-10-20 14:56:37,929 root         INFO     list_kafka_topic[1]|sensor.2

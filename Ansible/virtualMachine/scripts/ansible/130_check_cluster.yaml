@@ -1,0 +1,16 @@
+---
+- hosts: master
+  tasks:
+    - name: Check cluster status
+      shell: /opt/hadoop/hadoop/bin/hdfs dfsadmin -report
+      register: myshell_output
+      become: true
+      become_user: root
+
+    - name: Copy the cluster status to a local file
+      copy:
+        content: "{{ myshell_output.stdout }}"
+        dest: "/Users/lcjr86/Dropbox/RPi_Cluster/virtualMachine/output/cluster_status_raspbian.txt"
+      delegate_to: localhost
+      become: true
+      become_user: root

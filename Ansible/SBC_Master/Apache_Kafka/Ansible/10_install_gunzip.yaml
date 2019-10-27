@@ -1,0 +1,9 @@
+---
+- hosts: cluster
+  tasks:
+
+    - name: Install gunzip
+      apt:
+        name: gunzip
+      become: true
+      become_user: root

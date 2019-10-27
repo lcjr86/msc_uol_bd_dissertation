@@ -1,0 +1,11 @@
+---
+- hosts: cluster
+  tasks:
+    - name: Update /etc/hosts file (master and slave01 information)
+      blockinfile:
+        path: /etc/hosts
+        block: |
+          192.168.56.101     master
+          192.168.56.201     slave01
+      become: true
+      become_user: root

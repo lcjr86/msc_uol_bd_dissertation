@@ -1,0 +1,36 @@
+---
+- hosts: cluster
+  tasks:
+    - name: Delete /opt/hadoop_tmp/hdfs
+      file:
+        path: /opt/hadoop_tmp/hdfs
+        state: absent
+      become: true
+      become_user: root
+
+- hosts: master
+  tasks:
+    - name: Run 'hdfs namenode -format -force'
+      #shell: /$HADOOP_HOME/bin/hdfs namenode -format
+      #shell: echo "Y" | /opt/hadoop/hadoop/bin/hdfs namenode -format -y -force
+      shell: /opt/hadoop/hadoop/bin/hdfs namenode -format -force
+      environment:
+        JAVA_HOME: /usr/lib/jvm/java-1.8.0-openjdk-i386
+      become: true
+      become_user: root
+
+    - name: Run 'start-yarn.sh'
+      #script: /$HADOOP_HOME/sbin/start-yarn.sh
+      shell: /opt/hadoop/hadoop/sbin/start-yarn.sh
+      become: true
+      become_user: root
+      #environment:
+      #  JAVA_HOME: /usr/lib/jvm/java-8-openjdk-amd64
+
+    - name: Run 'start-dfs.sh'
+      #script: /$HADOOP_HOME/sbin/start-dfs.sh
+      shell: /opt/hadoop/hadoop/sbin/start-dfs.sh
+      become: true
+      become_user: root
+      #environment:
+      #  JAVA_HOME: /usr/lib/jvm/java-8-openjdk-amd64

@@ -1,0 +1,7 @@
+---
+- hosts: master
+  tasks:
+    - name: Run 'kafka-server-start.sh'
+      shell: nohup /opt/apache_kafka/kafka_2.12-2.3.0/bin/kafka-server-start.sh -daemon /opt/apache_kafka/kafka_2.12-2.3.0/config/server.properties > /dev/null 2>&1
+      become: true
+      become_user: root

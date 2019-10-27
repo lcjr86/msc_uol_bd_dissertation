@@ -1,0 +1,48 @@
+---
+- hosts: master
+  tasks:
+    - name: Create the spark-defaults.conf file
+      copy:
+        src: /opt/hadoop/spark/conf/spark-defaults.conf.template
+        dest: /opt/hadoop/spark/conf/spark-defaults.conf
+        remote_src: yes
+      become: true
+      become_user: root
+
+    - name: Update the spark-defaults.conf file - link spark with yarn
+      blockinfile:
+        path: /opt/hadoop/spark/conf/spark-defaults.conf
+        block: |
+          spark.master    yarn
+      become: true
+      become_user: root
+
+    - name: Update the spark-defaults.conf file - set spark memory usage
+      blockinfile:
+        path: /opt/hadoop/spark/conf/spark-defaults.conf
+        block: |
+          spark.driver.memory     256m
+          spark.yarn.am.memory    256m
+          spark.executor.memory   256m
+      become: true
+      become_user: root
+
+    - name: Update the spark-defaults.conf file - set monitoring
+      blockinfile:
+        path: /opt/hadoop/spark/conf/spark-defaults.conf
+        block: |
+          spark.eventLog.enabled  true
+          spark.eventLog.dir hdfs://node-master:9000/spark-logs
+      become: true
+      become_user: root
+
+    - name: Update the spark-defaults.conf file - set logs
+      blockinfile:
+        path: /opt/hadoop/spark/conf/spark-defaults.conf
+        block: |
+          spark.history.provider            org.apache.spark.deploy.history.FsHistoryProvider
+          spark.history.fs.logDirectory     hdfs://node-master:9000/spark-logs
+          spark.history.fs.update.interval  10s
+          spark.history.ui.port             18080
+      become: true
+      become_user: root

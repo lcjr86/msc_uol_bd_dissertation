@@ -1,0 +1,18 @@
+---
+- hosts: master
+  tasks:
+    - name: Copy '/opt/hadoop/' files to the slave01
+      synchronize:
+        #src: /opt/hadoop/
+        #dest: lcjr86@slave01:/opt/hadoop/
+        src: /opt/hadoop
+        dest: lcjr86@slave01:/opt/hadoop
+        #dest: lcjr86@slave01:/opt/hadoop/
+      become: true
+      become_user: root
+
+
+#-a, --archive               archive mode
+#-v, --verbose               increase verbosity
+#-x, --one-file-system       don't cross filesystem boundaries
+#-P                          same as --partial --progress
