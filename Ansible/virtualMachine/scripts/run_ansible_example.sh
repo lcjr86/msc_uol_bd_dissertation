@@ -18,29 +18,8 @@ ansible-playbook -i /Users/luizcarlosdejesusjunior/Documents/Repos/RPi_Cluster/v
 # --user=root \
 # --ask-become-pass
 
-ansible-playbook -i /Users/lcjr86/Dropbox/RPi_Cluster/virtualMachine/scripts/ansible/inventory_raspbian.ini \
-/Users/lcjr86/Dropbox/RPi_Cluster/virtualMachine/scripts/ansible/00_setup_hadoop_cluster_rasbian.yaml \
+ansible-playbook -i '/Users/lcjr86/Dropbox/MSc - Liverpool/CKIT-702--Computing Advisor Class/Implementation/msc_uol_dissertation/Ansible/virtualMachine/scripts/inventory_raspbian.ini' \
+'/Users/lcjr86/Dropbox/MSc - Liverpool/CKIT-702--Computing Advisor Class/Implementation/msc_uol_dissertation/Ansible/virtualMachine/scripts/230_install_python3_libraries.yaml' \  
 --user=root \
 --ask-become-pass
 
-#### install MQTT Broker and Client
-
-ansible-playbook -i /Users/lcjr86/Dropbox/RPi_Cluster/virtualMachine/scripts/ansible/inventory_raspbian.ini \
-/Users/lcjr86/Dropbox/RPi_Cluster/SBC_Master/MQTT_Broker/ansible/00_install_Mosquitto.yaml \
---user=root \
---ask-become-pass
-
-#### install Apache Nifi
-
-# ansible-playbook -i /Users/lcjr86/Dropbox/RPi_Cluster/virtualMachine/scripts/ansible/inventory_raspbian.ini \
-# /Users/lcjr86/Dropbox/RPi_Cluster/SBC_Master/Apache_Nifi/ansible/10_install_Apache_Nifi-1-8-0.yaml \
-# --user=root \
-# --ask-become-pass
-
-
-#### set Apache Kafka
-
-ansible-playbook -i /Users/lcjr86/Dropbox/RPi_Cluster/virtualMachine/scripts/ansible/inventory_raspbian.ini \
-/Users/lcjr86/Dropbox/RPi_Cluster/SBC_Master/Apache_Kafka/ansible/00_set_apache_kafka.yaml \
---user=root \
---ask-become-pass

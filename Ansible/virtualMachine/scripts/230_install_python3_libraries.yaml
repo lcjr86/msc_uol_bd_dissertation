@@ -1,0 +1,14 @@
+---
+- hosts: master
+  tasks:
+  - pip:
+      name: kafka_python
+      executable: pip3
+
+  - pip:
+      name: paho_mqtt
+      executable: pip3
+
+  - pip:
+      name: pymongo
+      executable: pip3

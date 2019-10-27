@@ -31,3 +31,7 @@ wheels/
 .installed.cfg
 *.egg
 MANIFEST
+
+# LOG
+
+*.log
