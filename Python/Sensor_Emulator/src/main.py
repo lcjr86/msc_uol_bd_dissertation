@@ -1,6 +1,6 @@
 import logging
 from logging.config import fileConfig
-from src import emulator as e
+import emulator as e
 import configparser
 
 fileConfig('../config/logging.ini')

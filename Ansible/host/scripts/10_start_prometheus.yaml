@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Start prometheus
+      shell: nohup prometheus > prometheus.log 2>&1 &
+      args:
+        chdir: ~/.config/

@@ -2,7 +2,7 @@
 - hosts: cluster
   tasks:
     - name: Run 'node_exporter' ### Apparently the error is false because the node_exporter is starting
-      shell: /opt/prometheus_node_exporter/node_exporter-0.18.1.linux-amd64/node_exporter > /dev/null 2>&1
+      shell: nohup /opt/prometheus_node_exporter/node_exporter-0.18.1.linux-amd64/node_exporter &
       become: true
       become_user: root
       ignore_errors: yes

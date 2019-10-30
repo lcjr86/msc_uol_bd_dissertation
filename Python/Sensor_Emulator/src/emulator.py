@@ -14,7 +14,7 @@ logger = logging.getLogger()
 config = configparser.ConfigParser()
 config.read('../config/setup.ini')
 
-from src import sensor as s
+import sensor as s
 
 class emulator:
 

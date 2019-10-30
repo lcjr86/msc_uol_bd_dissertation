@@ -1,0 +1,4 @@
+---
+- import_playbook: 10_start_prometheus.yaml
+- import_playbook: 20_start_grafana.yaml
+- import_playbook: 30_start_mongodb.yaml

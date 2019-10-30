@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Start grafana
+      shell: brew services restart grafana
+    
+    - name: Open grafana
+      shell: open http://localhost:3000/
