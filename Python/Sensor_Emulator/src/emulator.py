@@ -6,13 +6,18 @@ import paho.mqtt.client as paho
 import time
 import datetime
 import configparser
+import os
 
-fileConfig('../config/logging.ini')
+ROOT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
+
+#fileConfig('../config/logging.ini')
+fileConfig(os.path.join(ROOT_DIR, 'config', 'logging.ini'))
 logger = logging.getLogger()
 
 ### Get the 'setup.ini' file handler
 config = configparser.ConfigParser()
-config.read('../config/setup.ini')
+#config.read('../config/setup.ini')
+config.read(os.path.join(ROOT_DIR, 'config', 'setup.ini'))
 
 import sensor as s
 
