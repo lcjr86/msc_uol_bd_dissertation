@@ -1,0 +1,10 @@
+---
+
+- hosts: master
+  tasks:
+    - name: Run pySpark script
+      shell: nohup ./spark-submit --packages org.apache.spark:spark-streaming-kafka-0-8_2.11:2.2.0 /home/pi/Repositories/msc_uol_dissertation/Python/Data_Processing/spark-direct-kafka-mongodb.py localhost:9092 sensor.1 > /home/pi/Repositories/msc_uol_dissertation/Python/Data_Processing/output.log
+      args:
+        chdir: /opt/hadoop/spark/bin/
+      become: true
+      become_user: root

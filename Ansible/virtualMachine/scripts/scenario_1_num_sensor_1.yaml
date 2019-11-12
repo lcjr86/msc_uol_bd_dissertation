@@ -1,38 +1,5 @@
 ---
-
-- hosts: localhost
-  tasks:
-    - name: Replace 'Sensor_Emulator/config/setup.ini' for the one corresponding to the scenario
-      copy:
-        src: "/Users/lcjr86/Dropbox/MSc - Liverpool/CKIT-702--Computing Advisor Class/Implementation/msc_uol_dissertation/Ansible/Sensor_Emulator/config/scenario_1_setup.ini"
-        dest: "/Users/lcjr86/Dropbox/MSc - Liverpool/CKIT-702--Computing Advisor Class/Implementation/msc_uol_dissertation/Python/Sensor_Emulator/config/setup.ini"
-
-    - name: Activate Python Virtual Environment & run python Sensor Emulator code
-      shell: source '/Users/lcjr86/Dropbox/MSc - Liverpool/CKIT-702--Computing Advisor Class/Implementation/msc_uol_dissertation/Python/Sensor_Emulator/venv/bin/activate' && cd '/Users/lcjr86/Dropbox/MSc - Liverpool/CKIT-702--Computing Advisor Class/Implementation/msc_uol_dissertation/Python/Sensor_Emulator/src/'  && nohup python main.py &
-      ignore_errors: yes
-
-- hosts: master
-  tasks:
-    - name: Create kafka topic 'sensor.1'
-      shell: /opt/apache_kafka/kafka_2.12-2.3.0/bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic sensor.1
-      become: true
-      become_user: root
-      ignore_errors: yes
-
-    - name: Replace 'MQTT_Kafka_bridge/config/setup.ini' for the one corresponding to the scenario
-      copy:
-        src: "/Users/lcjr86/Dropbox/MSc - Liverpool/CKIT-702--Computing Advisor Class/Implementation/msc_uol_dissertation/Ansible/MQTT_Kafka_bridge/config/scenario_1_setup.ini"
-        dest: "~/Repositories/msc_uol_dissertation/Python/MQTT_Kafka_bridge/config/setup.ini"
-    
-    - name: Run the MQTT_Kafka_Bridge code
-      shell: nohup python3 main.py &
-      args:
-        chdir: ~/Repositories/msc_uol_dissertation/Python/MQTT_Kafka_bridge/src/
-      ignore_errors: yes
-
-    - name: Run pySpark script
-      shell: nohup ./spark-submit --packages org.apache.spark:spark-streaming-kafka-0-8_2.11:2.2.0 /home/pi/Repositories/msc_uol_dissertation/Python/Data_Processing/spark-direct-kafka-mongodb.py localhost:9092 sensor.1 > /home/pi/Repositories/msc_uol_dissertation/Python/Data_Processing/output.log
-      args:
-        chdir: /opt/hadoop/spark/bin/
-      become: true
-      become_user: root
+- import_playbook: scenario_1__run_sensor_emulator.yaml
+- import_playbook: scenario_1__create_kafka_topic.yaml
+- import_playbook: scenario_1__run_mqtt_kafka_bridge.yaml
+- import_playbook: scenario_1__run_pyspark_script.yaml
