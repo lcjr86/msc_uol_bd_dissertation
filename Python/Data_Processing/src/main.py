@@ -48,7 +48,6 @@ class sparkMainSession():
         ### Returns DStream
         kvs = KafkaUtils.createDirectStream(self.ssc, [self.topic], {"metadata.broker.list": self.brokers})
 
-
         # print("kvs:", kvs)
 
         ### DStream Twith the 2nd element of the tuple
@@ -85,7 +84,10 @@ if __name__ == "__main__":
         for i in range(0, int(number_topics)):
 
             broker = kafka_broker + ':' + kafka_port
+            print("broker|" + broker)
+
             topic = kafka_topic_structure.replace("[SENSOR_ID]", str(i + 1))
+            print("topic|" + topic)
 
             list_sparkMainSession.append(sparkMainSession(broker, topic))
             print("list_sparkMainSession[" + str(i) + "] created")
