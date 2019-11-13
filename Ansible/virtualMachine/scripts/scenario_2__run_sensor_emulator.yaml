@@ -1,0 +1,12 @@
+---
+
+- hosts: localhost
+  tasks:
+    - name: Replace 'Sensor_Emulator/config/setup.ini' for the one corresponding to the scenario
+      copy:
+        src: "/Users/lcjr86/Dropbox/MSc - Liverpool/CKIT-702--Computing Advisor Class/Implementation/msc_uol_dissertation/Ansible/Sensor_Emulator/config/scenario_2_setup.ini"
+        dest: "/Users/lcjr86/Dropbox/MSc - Liverpool/CKIT-702--Computing Advisor Class/Implementation/msc_uol_dissertation/Python/Sensor_Emulator/config/setup.ini"
+
+    - name: Activate Python Virtual Environment & run python Sensor Emulator code
+      shell: source '/Users/lcjr86/Dropbox/MSc - Liverpool/CKIT-702--Computing Advisor Class/Implementation/msc_uol_dissertation/Python/Sensor_Emulator/venv/bin/activate' && cd '/Users/lcjr86/Dropbox/MSc - Liverpool/CKIT-702--Computing Advisor Class/Implementation/msc_uol_dissertation/Python/Sensor_Emulator/src/'  && nohup python main.py &
+      ignore_errors: yes

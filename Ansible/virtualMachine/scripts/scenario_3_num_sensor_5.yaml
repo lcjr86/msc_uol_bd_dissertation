@@ -1,2 +1,5 @@
 ---
-- hosts: master
+- import_playbook: scenario_3__run_sensor_emulator.yaml
+- import_playbook: scenario_3__create_kafka_topic.yaml
+- import_playbook: scenario_3__run_mqtt_kafka_bridge.yaml
+- import_playbook: scenario_3__run_pyspark_script.yaml

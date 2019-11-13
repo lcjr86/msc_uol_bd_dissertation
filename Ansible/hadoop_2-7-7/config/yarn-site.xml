@@ -13,18 +13,22 @@
   limitations under the License. See accompanying LICENSE file.
 -->
 <configuration>
+
     <property>
         <name>yarn.resourcemanager.resource-tracker.address</name>
         <value>master:8025</value>
     </property>
+
     <property>
         <name>yarn.resourcemanager.scheduler.address</name>
         <value>master:8035</value>
     </property>
+
     <property>
         <name>yarn.resourcemanager.address</name>
         <value>master:8050</value>
     </property>
+
     <property>
         <name>yarn.nodemanager.resource.memory-mb</name>
         <value>768</value>
@@ -44,4 +48,5 @@
         <name>yarn.nodemanager.vmem-check-enabled</name>
         <value>false</value>
     </property>
+
 </configuration>
