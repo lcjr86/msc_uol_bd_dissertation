@@ -49,7 +49,7 @@ class sparkMainSession():
     def connect_and_filter(self):
 
         ### Returns DStream
-        kvs = KafkaUtils.createDirectStream(self.ssc, [self.topic], {"metadata.broker.list": self.brokers})
+        kvs = KafkaUtils.createDirectStream(self.ssc, [self.topic], {"metadata.broker.list": self.broker})
         print("kvs|", str(kvs))
 
         ### DStream Twith the 2nd element of the tuple
