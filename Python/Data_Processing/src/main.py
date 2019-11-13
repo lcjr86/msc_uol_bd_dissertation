@@ -22,15 +22,11 @@ class sparkMainSession():
         self.broker = broker
         self.topic = topic
 
-        self.sensorID = topic.split(".")[-1]
-
-        self.appName = "ProcessKafkaSensorData" + str(self.sensorID)
-
         conf = SparkConf()
         conf.setMaster('yarn')
-        conf.setAppName(self.appName)
+        conf.setAppName("ProcessKafkaSensorData")
 
-        self.sc = SparkContext(conf=conf)
+        self.sc = SparkContext.getOrCreate(conf=conf)
         self.spark = SparkSession(self.sc)
         self.ssc = StreamingContext(self.sc, 1)
 
