@@ -30,7 +30,7 @@ class sparkMainSession():
         self.spark = SparkSession(self.sc)
         self.ssc = StreamingContext(self.sc, 1)
 
-        folder_topic = self.topic.replace(".", "_")
+        self.folder_topic = self.topic.replace(".", "_")
 
     def send_to_mongodb(self, rdd):
 
