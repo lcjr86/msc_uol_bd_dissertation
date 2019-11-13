@@ -35,8 +35,11 @@ class sparkMainSession():
     def send_to_mongodb(self, rdd):
 
         if not rdd.isEmpty():
+
             message = rdd.first()
             message = message.split("|")
+            print("message|" + str(message))
+
             client = MongoClient('mongodb://10.0.2.2:27017/')
             db = client['edge_data']
             collection = db[self.folder_topic]
@@ -47,15 +50,16 @@ class sparkMainSession():
 
         ### Returns DStream
         kvs = KafkaUtils.createDirectStream(self.ssc, [self.topic], {"metadata.broker.list": self.brokers})
-
-        # print("kvs:", kvs)
+        print("kvs|", str(kvs))
 
         ### DStream Twith the 2nd element of the tuple
         sensor_message = kvs.map(lambda x: x[1])
+        print("sensor_message|", str(sensor_message))
 
         ### Filtering only the even numbers
         sensor_message_filtered = sensor_message.filter(lambda x: float(
             x.replace(re.findall('^[0-9]{4}-[0-9]{2}-[0-9]{2}\|[0-9]{2}\:[0-9]{2}:[0-9]{2}\|', x)[0], "")) % 2 == 0)
+        print("sensor_message_filtered|", str(sensor_message_filtered))
 
         ### Print the messages
         sensor_message_filtered.pprint()
@@ -79,7 +83,7 @@ if __name__ == "__main__":
         kafka_topic_structure = 'sensor.[SENSOR_ID]'
         print("kafka_topic_structure|" + kafka_topic_structure)
 
-        list_sparkMainSession  = []
+        list_sparkMainSession = []
 
         for i in range(0, int(number_topics)):
 

@@ -50,6 +50,11 @@
     </property>
 
     <property>
+        <name>yarn.nodemanager.pmem-check-enabled</name>
+        <value>false</value>
+    </property>
+
+    <property>
             <name>yarn.acl.enable</name>
             <value>0</value>
     </property>
