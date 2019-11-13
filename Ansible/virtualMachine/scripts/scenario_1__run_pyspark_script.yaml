@@ -4,8 +4,7 @@
   tasks:
     - name: Run pySpark script
       #shell: nohup ./spark-submit --packages org.apache.spark:spark-streaming-kafka-0-8_2.11:2.2.0 /home/pi/Repositories/msc_uol_dissertation/Python/Data_Processing/spark-direct-kafka-mongodb.py localhost:9092 sensor.1 &
-      shell: nohup ./spark-submit --packages org.apache.spark:spark-streaming-kafka-0-8_2.11:2.2.0 --master yarn --deploy-mode cluster --driver-memory 64M --executor-memory 64M /home/pi/Repositories/msc_uol_dissertation/Python/Data_Processing/spark-direct-kafka-mongodb.py localhost:9092 sensor.1 &
-      #shell: nohup ./spark-submit --packages org.apache.spark:spark-streaming-kafka-0-8_2.11:2.2.0 --master yarn --deploy-mode client /home/pi/Repositories/msc_uol_dissertation/Python/Data_Processing/spark-direct-kafka-mongodb.py localhost:9092 sensor.1 &
+      shell: nohup ./spark-submit --packages org.apache.spark:spark-streaming-kafka-0-8_2.11:2.2.0 --master yarn --deploy-mode cluster /home/pi/Repositories/msc_uol_dissertation/Python/Data_Processing/spark-direct-kafka-mongodb.py 192.168.56.103:9092 sensor.1 &
       args:
         chdir: /opt/hadoop/spark/bin/
       become: true

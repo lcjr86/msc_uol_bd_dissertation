@@ -1,0 +1,8 @@
+---
+- hosts: master
+  tasks:
+    - name: Run 'start-yarn.sh'
+      #script: /$HADOOP_HOME/sbin/start-yarn.sh
+      shell: /opt/hadoop/spark/sbin/start-history-server.sh
+      become: true
+      become_user: root

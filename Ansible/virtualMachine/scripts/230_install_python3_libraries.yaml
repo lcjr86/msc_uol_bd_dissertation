@@ -1,5 +1,5 @@
 ---
-- hosts: master
+- hosts: cluster
   tasks:
   - pip:
       name: kafka_python

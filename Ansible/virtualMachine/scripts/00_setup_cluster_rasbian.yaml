@@ -19,6 +19,7 @@
 - import_playbook: 140_install_spark_2-2-0.yaml
 - import_playbook: 150_config_spark-defaults.yaml
 - import_playbook: 160_create_spark_logs_folder.yaml
+- import_playbook: 165_run_spark_history_server.yaml
 - import_playbook: 170_install_Mosquitto_Broker.yaml
 - import_playbook: 180_install_apache_kafka_2-3-0.yaml
 - import_playbook: 190_start_zookeeper_and_kafka.yaml

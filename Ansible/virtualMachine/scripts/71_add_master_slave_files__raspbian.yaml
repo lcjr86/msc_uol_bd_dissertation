@@ -15,6 +15,6 @@
         content: |
           slave01
           slave02
-          slave03
+          #slave03
       become: true
       become_user: root

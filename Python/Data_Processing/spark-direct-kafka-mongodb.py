@@ -14,7 +14,11 @@ if __name__ == "__main__":
     
     try:
     
-        sc = SparkContext(appName="ProcessKafkaSensorData")
+        conf = SparkConf()
+        conf.setMaster('yarn')
+        conf.setAppName('ProcessKafkaSensorData')
+
+        sc = SparkContext(conf=conf)
         spark = SparkSession(sc)
         ssc = StreamingContext(sc, 1)
 

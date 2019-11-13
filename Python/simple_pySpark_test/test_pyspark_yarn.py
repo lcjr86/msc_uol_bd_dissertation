@@ -1,5 +1,5 @@
 from pyspark import SparkConf
-from pyspark import SparkContextimport
+from pyspark import SparkContext
 
 conf = SparkConf()
 conf.setMaster('yarn')
