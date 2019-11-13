@@ -4,11 +4,20 @@
   - pip:
       name: kafka_python
       executable: pip3
+    become: True
 
   - pip:
       name: paho_mqtt
       executable: pip3
+    become: True
 
   - pip:
       name: pymongo
       executable: pip3
+    become: True
+
+#   - pip:
+#       name: pyspark
+#       executable: pip3
+#     become: True
+#     ignore_errors: yes

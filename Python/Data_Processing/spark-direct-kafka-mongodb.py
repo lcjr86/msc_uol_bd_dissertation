@@ -6,6 +6,7 @@ from pyspark.streaming import StreamingContext
 from pyspark.streaming.kafka import KafkaUtils
 from pyspark.sql import SparkSession
 from pyspark.sql.types import StringType
+from pyspark import SparkConf
 
 from pymongo import MongoClient
 
