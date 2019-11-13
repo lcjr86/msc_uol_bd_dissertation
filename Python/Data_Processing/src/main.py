@@ -1,7 +1,7 @@
 
 
-#import logging
-#from logging.config import fileConfig
+import logging
+from logging.config import fileConfig
 
 import configparser
 
@@ -15,15 +15,22 @@ from pyspark import SparkConf
 
 from pymongo import MongoClient
 
-#fileConfig('../config/logging.ini')
-#logger = logging.getLogger()
+from os import path
+
+logging_INI_file_path = path.join(path.dirname(path.abspath(__file__)), '../config/logging.ini')
+
+fileConfig(logging_INI_file_path)
+logger = logging.getLogger()
 
 ### Get the 'setup.ini' file handler
 config = configparser.ConfigParser()
-config.read('../config/setup.ini')
+
+setup_INI_file_path = path.join(path.dirname(path.abspath(__file__)), '../config/setup.ini')
+
+config.read(setup_INI_file_path)
 
 number_topics = config['Global']['num_topics']
-#logger.info("number_topics|" + number_topics)
+logger.info("number_topics|" + number_topics)
 
 class sparkMainSession():
 
@@ -56,7 +63,8 @@ class sparkMainSession():
 
         ### Returns DStream
         kvs = KafkaUtils.createDirectStream(self.ssc, [self.topic], {"metadata.broker.list": self.brokers})
-        
+
+
         # print("kvs:", kvs)
 
         ### DStream Twith the 2nd element of the tuple
@@ -80,13 +88,13 @@ if __name__ == "__main__":
     try:
 
         kafka_broker = config['kafka']['broker_address']
-        #logger.info("kafka_broker|" + kafka_broker)
+        logger.info("kafka_broker|" + kafka_broker)
 
         kafka_port = config['kafka']['broker_port']
-        #logger.info("kafka_port|" + kafka_port)
+        logger.info("kafka_port|" + kafka_port)
 
         kafka_topic_structure = config['kafka']['topic_structure']
-        #logger.info("kafka_topic_structure|" + kafka_topic_structure)
+        logger.info("kafka_topic_structure|" + kafka_topic_structure)
 
         list_sparkMainSession  = []
 
@@ -96,13 +104,12 @@ if __name__ == "__main__":
             topic = kafka_topic_structure.replace("[SENSOR_ID]", str(i + 1))
 
             list_sparkMainSession.append(sparkMainSession(broker, topic))
-            #logger.info("list_sparkMainSession[" + str(i) + "] created")
+            logger.info("list_sparkMainSession[" + str(i) + "] created")
 
         for i in range(0, int(number_topics)):
 
             list_sparkMainSession[i].connect_and_filter()
-            #logger.info("list_sparkMainSession[" + str(i) + "].connect_and_filter() executed")
+            logger.info("list_sparkMainSession[" + str(i) + "].connect_and_filter() executed")
 
     except Exception as e:
-        print(e)
-        #logger.exception(e)
+        logger.exception(e)
