@@ -23,14 +23,6 @@ if __name__ == "__main__":
                 data = collection.insert_one({'date': message[0], 'time': message[1], 'value': message[2]})
                 client.close()
 
-        conf = SparkConf()
-        conf.setMaster('yarn')
-        conf.setAppName('ProcessKafkaSensorData')
-
-        sc = SparkContext(conf=conf)
-        spark = SparkSession(sc)
-        ssc = StreamingContext(sc, 1)
-
         number_topics = sys.argv[1]
 
         kafka_broker = '192.168.56.103'
@@ -42,15 +34,20 @@ if __name__ == "__main__":
         kafka_topic_structure = 'sensor.[SENSOR_ID]'
         print("kafka_topic_structure|" + kafka_topic_structure)
 
-        ssc.start()
-        print("ssc started")
-
-        ssc.awaitTermination()
-        print("ssc awaitTermination")
-
         for i in range(0, int(number_topics)):
 
             print("***** " + str(i) + " *****")
+
+            conf = SparkConf()
+            conf.setMaster('yarn')
+            conf.setAppName('ProcessKafkaSensorData')
+
+            sc = SparkContext(conf=conf)
+            spark = SparkSession(sc)
+            ssc = StreamingContext(sc, 1)
+
+            ssc.start()
+            print("ssc.start()")
 
             topic = kafka_topic_structure.replace("[SENSOR_ID]", str(i + 1))
             print("topic|" + topic)
@@ -75,6 +72,9 @@ if __name__ == "__main__":
 
             ### Export to MongoDB
             sensor_message_filtered.foreachRDD(lambda x: sendToMongoDB(x))
-        
+
+            ssc.stop()
+            print("ssc.stop()")
+
     except Exception as e:
         print(e)
