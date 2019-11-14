@@ -1,0 +1,15 @@
+---
+- hosts: master
+  tasks:
+    - name: Update the spark-defaults.conf file
+      blockinfile:
+        path: /opt/apache_kafka/prometheus/kafka-0-8-2.yml
+        block: |
+          - pattern : kafka.producer<type=producer-metrics, client-id=(.+)><>(.+):\w* 
+            name: kafka_producer_$2 
+          - pattern : kafka.consumer<type=consumer-metrics, client-id=(.+)><>(.+):\w* 
+            name: kafka_consumer_$2
+          - pattern : kafka.consumer<type=consumer-fetch-manager-metrics, client-id=(.+)><>(.+):\w* 
+            name: kafka_consumer_$2
+      become: true
+      become_user: root

@@ -22,6 +22,8 @@
 - import_playbook: 165_run_spark_history_server.yaml
 - import_playbook: 170_install_Mosquitto_Broker.yaml
 - import_playbook: 180_install_apache_kafka_2-3-0.yaml
+- import_playbook: 188_install_prometheus_JMX_exporter.yaml
+- import_playbook: 189_config_prometheus_JMX_exporter.yaml
 - import_playbook: 190_start_zookeeper_and_kafka.yaml
 - import_playbook: 210_install_prometheus_node_exporter.yaml
 - import_playbook: 220_start_prometheus_node_exporter.yaml

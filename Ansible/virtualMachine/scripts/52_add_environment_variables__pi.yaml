@@ -26,6 +26,9 @@
           export LD_LIBRARY_PATH=$HADOOP_HOME/lib/native:$LD_LIBRARY_PATH
           export PYSPARK_PYTHON=python3          
           # -- SPARK ENVIRONMENT VARIABLES END -- #
+          # -- KAFKA ENVIRONMENT VARIABLES START -- #
+          #export KAFKA_OPTS=-javaagent:/opt/apache_kafka/prometheus/jmx_prometheus_javaagent-0.3.0.jar=7071:/opt/apache_kafka/prometheus/kafka-0-8-2.yml
+          # -- KAFKA ENVIRONMENT VARIABLES START -- #
       become: true
       become_user: pi
 
