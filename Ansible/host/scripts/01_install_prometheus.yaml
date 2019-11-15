@@ -1,0 +1,6 @@
+---
+- hosts: localhost
+  tasks:
+
+
+# Reference: https://brewinstall.org/Install-prometheus-on-Mac-with-Brew/

@@ -8,13 +8,15 @@ from pyspark.sql import SparkSession
 from pyspark import SparkConf
 
 from pymongo import MongoClient
+from influxdb import InfluxDBClient
 
 class ConnectAndFilter():
 
-    def __init__(self, kafka_topic_structure, ssc, broker):
+    def __init__(self, kafka_topic_structure, ssc, broker, load_to_db):
         self.kafka_topic_structure = kafka_topic_structure
         self.ssc = ssc
         self.broker = broker
+        self.load_to_db = load_to_db
 
     def run(self):
 
@@ -50,12 +52,47 @@ class ConnectAndFilter():
                 data = collection.insert_one({'date': message[0], 'time': message[1], 'value': message[2]})
                 client.close()
 
-        ### Export to MongoDB
-        sensor_message_filtered.foreachRDD(lambda x: sendToMongoDB(x))
+        def sendToInfluxDB(rdd):
+            if not rdd.isEmpty():
+                message = rdd.first()
+                message = message.split("|")
+                client = InfluxDBClient('10.0.2.2', 8086, 'root', 'root', "edge_data")
+
+                table_name = "sensor_data"
+
+                json_body = [
+                    {
+                        "measurement": table_name,
+                        "time": str(message[0] + "T" + message[1] + "Z"),
+                        "tags": {
+                            "sensorId": str(i + 1)
+                        },
+                        "fields": {
+                            "value": str(message[2])
+                        }
+                    }
+                ]
+
+                client.write_points(json_body)
+
+        if(load_to_db == "mongodb"):
+            sensor_message_filtered.foreachRDD(lambda x: sendToMongoDB(x))
+
+        if(load_to_db == "influxdb"):
+            sensor_message_filtered.foreachRDD(lambda x: sendToInfluxDB(x))
 
 if __name__ == "__main__":
     
     try:
+
+        load_to_db = "influxdb"
+        #load_to_db = "mongodb"
+
+        if(load_to_db == "influxfb"):
+            db_name = 'edge_data'
+            client = InfluxDBClient('10.0.2.2', 8086, 'root', 'root', db_name)
+            client.drop_database(db_name)
+            client.create_database(db_name)
 
         number_topics = sys.argv[1]
 
@@ -81,7 +118,7 @@ if __name__ == "__main__":
         for i in range(0, int(number_topics)):
 
             print("***** " + str(i) + " *****")
-            list_connect_and_run.append(ConnectAndFilter(kafka_topic_structure, ssc, broker))
+            list_connect_and_run.append(ConnectAndFilter(kafka_topic_structure, ssc, broker, load_to_db))
             print("list_connect_and_run[" + str(i + 1) + "] instantiated")
 
         for i in range(0, int(number_topics)):

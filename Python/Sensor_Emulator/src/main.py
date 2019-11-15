@@ -22,10 +22,11 @@ numSensors = config["emulator"]["numSensors"]
 
 ### Define if you are publishing to the MQTT broker (local = False) or not (local = True)
 local = False
+store_db = True
 
 ### Instantiate the emulator
 
-emulator = e.emulator(frequency_in_seconds, numSensors, local)
+emulator = e.emulator(frequency_in_seconds, numSensors, local, store_db)
 
 ### Run the emulator
 emulator.run()

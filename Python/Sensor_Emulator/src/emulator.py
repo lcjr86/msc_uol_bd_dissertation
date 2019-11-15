@@ -7,6 +7,7 @@ import time
 import datetime
 import configparser
 import os
+from influxdb import InfluxDBClient
 
 ROOT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
 
@@ -23,10 +24,11 @@ import sensor as s
 
 class emulator:
 
-    def __init__(self, frequency_in_seconds, numSensors, local):
+    def __init__(self, frequency_in_seconds, numSensors, local, store_db):
         self.frequency_in_seconds = int(frequency_in_seconds)
         self.numSensors = int(numSensors)
         self.local = local
+        self.store_db = store_db
 
     def run(self):
         try:
@@ -46,22 +48,32 @@ class emulator:
                 mqtt_broker_client = paho.Client("sensor_Emulator")
                 mqtt_broker_client.connect(broker, port)
 
+            if self.store_db:
+                db_name = 'sensor_data'
+                client = InfluxDBClient('localhost', 8086, 'root', 'root', db_name)
+                client.drop_database(db_name)
+                client.create_database(db_name)
+
             ### Generate the data and print
             while True:
 
-                if self.local:
-                    for i in range(0, self.numSensors):
+                timestamp = datetime.datetime.fromtimestamp(time.time())
+
+                for i in range(0, self.numSensors):
+
+                    data = listSensors[i].generateData()
+
+                    if self.local:
+
                         message = "sensor_" + str(i + 1) + "|" + str(
-                            datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d|%H:%M:%S')) + "|" + str(
-                            listSensors[i].generateData())
+                            timestamp.strftime('%Y-%m-%d|%H:%M:%S')) + "|" + str(data)
 
                         print(message)
-                else:
-                    for i in range(0, self.numSensors):
+
+                    else:
 
                         message = str(
-                            datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d|%H:%M:%S')) + "|" + str(
-                            listSensors[i].generateData())
+                            timestamp.strftime('%Y-%m-%d|%H:%M:%S')) + "|" + str(data)
 
                         ### create a topic for each sensor
                         topic = topic_structure.replace("[SENSOR_ID]", str(i + 1))
@@ -69,6 +81,30 @@ class emulator:
                         mqtt_broker_client.publish(topic, message)
 
                         logger.info("topic|" + str(topic) + "|message|" + message)
+
+
+                    if self.store_db:
+
+                        table_name = "sensor_data"
+                        date_format = '%Y-%m-%dT%H:%M:%S%Z'
+
+                        json_body = [
+                            {
+                                "measurement": table_name,
+                                "time": str(timestamp.strftime(date_format) + "Z"),
+                                "tags": {
+                                    "sensorId": str(i + 1)
+                                },
+                                "fields": {
+                                    "value": data
+                                }
+                            }
+                        ]
+
+                        client.write_points(json_body)
+
+                        logger.info("data inserted on db: " + db_name + "table: " + table_name)
+                        logger.info("data inserted:" + str(json_body))
 
                 time.sleep(self.frequency_in_seconds)
 

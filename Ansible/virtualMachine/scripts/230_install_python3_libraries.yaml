@@ -16,6 +16,11 @@
       executable: pip3
     become: True
 
+  - pip:
+      name: influxdb
+      executable: pip3
+    become: True
+
 #   - pip:
 #       name: pyspark
 #       executable: pip3
