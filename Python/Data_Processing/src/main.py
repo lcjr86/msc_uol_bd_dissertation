@@ -18,9 +18,11 @@ class ConnectAndFilter():
         self.broker = broker
         self.load_to_db = load_to_db
 
-    def run(self):
+    def run(self, sensorId):
+        
+        self.sensorId = sensorId
 
-        topic = self.kafka_topic_structure.replace("[SENSOR_ID]", str(i + 1))
+        topic = self.kafka_topic_structure.replace("[SENSOR_ID]", str(self.sensorId + 1))
         print("topic|" + topic)
 
         folder_topic = topic.replace(".", "_")
@@ -66,7 +68,7 @@ class ConnectAndFilter():
                         "measurement": table_name,
                         "time": str(message[0] + "T" + message[1] + "Z"),
                         "tags": {
-                            "sensorId": str(i + 1)
+                            "sensorId": str(self.sensorId + 1)
                         },
                         "fields": {
                             "value": str(message[2])
@@ -80,7 +82,7 @@ class ConnectAndFilter():
             sensor_message_filtered.foreachRDD(lambda x: sendToMongoDB(x))
 
         if(load_to_db == "influxdb"):
-            sensor_message_filtered.foreachRDD(lambda x: sendToInfluxDB(x))
+            sensor_message_filtered.foreachRDD(lambda x: sendToInfluxDB(x, self.sensorId))
 
 if __name__ == "__main__":
     
@@ -125,7 +127,7 @@ if __name__ == "__main__":
         for i in range(0, int(number_topics)):
 
             print("***** " + str(i) + " *****")
-            list_connect_and_run[i].run()
+            list_connect_and_run[i].run(i)
             print("list_connect_and_run[" + str(i + 1) + "].run() executed")
 
         ssc.start()
