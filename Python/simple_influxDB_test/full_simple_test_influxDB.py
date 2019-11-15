@@ -16,7 +16,7 @@ json_body = [
 
 client = InfluxDBClient('localhost', 8086, 'root', 'root', 'example')
 
-client.drop_database('example')
+#client.drop_database('example')
 
 client.create_database('example')
 

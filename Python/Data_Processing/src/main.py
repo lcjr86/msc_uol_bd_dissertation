@@ -57,7 +57,8 @@ class ConnectAndFilter():
                 message = rdd.first()
                 message = message.split("|")
                 client = InfluxDBClient('10.0.2.2', 8086, 'root', 'root', "edge_data")
-
+                client.create_database(db_name)
+                
                 table_name = "sensor_data"
 
                 json_body = [
@@ -91,8 +92,8 @@ if __name__ == "__main__":
         if(load_to_db == "influxdb"):
             db_name = 'edge_data'
             client = InfluxDBClient('10.0.2.2', 8086, 'root', 'root', db_name)
-            client.drop_database(db_name)
-            client.create_database(db_name)
+            #client.drop_database(db_name)
+            #client.create_database(db_name)
 
         number_topics = sys.argv[1]
 

@@ -1807,3 +1807,561 @@
 2019-11-15 23:29:54,876|root        |INFO    |topic|sensor/1|message|2019-11-15|23:29:54|7
 2019-11-15 23:29:54,887|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
 2019-11-15 23:29:54,887|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:29:54Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 7}}]
+2019-11-15 23:29:59,891|root        |INFO    |topic|sensor/1|message|2019-11-15|23:29:59|8
+2019-11-15 23:29:59,911|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:29:59,911|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:29:59Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 8}}]
+2019-11-15 23:30:04,912|root        |INFO    |topic|sensor/1|message|2019-11-15|23:30:04|8
+2019-11-15 23:30:04,920|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:30:04,920|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:30:04Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 8}}]
+2019-11-15 23:30:09,925|root        |INFO    |topic|sensor/1|message|2019-11-15|23:30:09|4
+2019-11-15 23:30:09,936|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:30:09,936|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:30:09Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 4}}]
+2019-11-15 23:30:14,942|root        |INFO    |topic|sensor/1|message|2019-11-15|23:30:14|1
+2019-11-15 23:30:14,950|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:30:14,950|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:30:14Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 1}}]
+2019-11-15 23:30:19,955|root        |INFO    |topic|sensor/1|message|2019-11-15|23:30:19|4
+2019-11-15 23:30:19,965|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:30:19,965|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:30:19Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 4}}]
+2019-11-15 23:30:24,967|root        |INFO    |topic|sensor/1|message|2019-11-15|23:30:24|4
+2019-11-15 23:30:24,981|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:30:24,982|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:30:24Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 4}}]
+2019-11-15 23:30:29,986|root        |INFO    |topic|sensor/1|message|2019-11-15|23:30:29|9
+2019-11-15 23:30:29,996|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:30:29,997|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:30:29Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 9}}]
+2019-11-15 23:30:35,000|root        |INFO    |topic|sensor/1|message|2019-11-15|23:30:35|3
+2019-11-15 23:30:35,008|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:30:35,008|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:30:35Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 3}}]
+2019-11-15 23:30:40,012|root        |INFO    |topic|sensor/1|message|2019-11-15|23:30:40|2
+2019-11-15 23:30:40,024|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:30:40,024|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:30:40Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 2}}]
+2019-11-15 23:30:45,028|root        |INFO    |topic|sensor/1|message|2019-11-15|23:30:45|3
+2019-11-15 23:30:45,036|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:30:45,037|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:30:45Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 3}}]
+2019-11-15 23:30:50,038|root        |INFO    |topic|sensor/1|message|2019-11-15|23:30:50|1
+2019-11-15 23:30:50,048|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:30:50,048|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:30:50Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 1}}]
+2019-11-15 23:30:55,053|root        |INFO    |topic|sensor/1|message|2019-11-15|23:30:55|2
+2019-11-15 23:30:55,063|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:30:55,063|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:30:55Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 2}}]
+2019-11-15 23:31:00,067|root        |INFO    |topic|sensor/1|message|2019-11-15|23:31:00|1
+2019-11-15 23:31:00,077|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:31:00,077|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:31:00Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 1}}]
+2019-11-15 23:31:05,081|root        |INFO    |topic|sensor/1|message|2019-11-15|23:31:05|1
+2019-11-15 23:31:05,091|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:31:05,091|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:31:05Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 1}}]
+2019-11-15 23:31:10,096|root        |INFO    |topic|sensor/1|message|2019-11-15|23:31:10|9
+2019-11-15 23:31:10,109|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:31:10,109|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:31:10Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 9}}]
+2019-11-15 23:31:15,113|root        |INFO    |topic|sensor/1|message|2019-11-15|23:31:15|1
+2019-11-15 23:31:15,122|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:31:15,122|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:31:15Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 1}}]
+2019-11-15 23:31:20,126|root        |INFO    |topic|sensor/1|message|2019-11-15|23:31:20|6
+2019-11-15 23:31:20,146|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:31:20,146|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:31:20Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 6}}]
+2019-11-15 23:31:25,151|root        |INFO    |topic|sensor/1|message|2019-11-15|23:31:25|1
+2019-11-15 23:31:25,162|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:31:25,162|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:31:25Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 1}}]
+2019-11-15 23:31:30,166|root        |INFO    |topic|sensor/1|message|2019-11-15|23:31:30|4
+2019-11-15 23:31:30,214|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:31:30,217|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:31:30Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 4}}]
+2019-11-15 23:31:35,223|root        |INFO    |topic|sensor/1|message|2019-11-15|23:31:35|9
+2019-11-15 23:31:35,355|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:31:35,356|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:31:35Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 9}}]
+2019-11-15 23:31:40,359|root        |INFO    |topic|sensor/1|message|2019-11-15|23:31:40|10
+2019-11-15 23:31:40,369|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:31:40,370|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:31:40Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 10}}]
+2019-11-15 23:31:45,373|root        |INFO    |topic|sensor/1|message|2019-11-15|23:31:45|7
+2019-11-15 23:31:45,383|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:31:45,383|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:31:45Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 7}}]
+2019-11-15 23:31:50,388|root        |INFO    |topic|sensor/1|message|2019-11-15|23:31:50|6
+2019-11-15 23:31:50,396|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:31:50,396|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:31:50Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 6}}]
+2019-11-15 23:31:55,401|root        |INFO    |topic|sensor/1|message|2019-11-15|23:31:55|9
+2019-11-15 23:31:55,412|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:31:55,412|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:31:55Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 9}}]
+2019-11-15 23:32:00,416|root        |INFO    |topic|sensor/1|message|2019-11-15|23:32:00|10
+2019-11-15 23:32:00,423|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:32:00,423|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:32:00Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 10}}]
+2019-11-15 23:32:05,426|root        |INFO    |topic|sensor/1|message|2019-11-15|23:32:05|1
+2019-11-15 23:32:05,436|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:32:05,436|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:32:05Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 1}}]
+2019-11-15 23:32:10,439|root        |INFO    |topic|sensor/1|message|2019-11-15|23:32:10|8
+2019-11-15 23:32:10,450|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:32:10,450|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:32:10Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 8}}]
+2019-11-15 23:32:15,454|root        |INFO    |topic|sensor/1|message|2019-11-15|23:32:15|1
+2019-11-15 23:32:15,466|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:32:15,466|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:32:15Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 1}}]
+2019-11-15 23:32:20,468|root        |INFO    |topic|sensor/1|message|2019-11-15|23:32:20|3
+2019-11-15 23:32:20,478|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:32:20,478|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:32:20Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 3}}]
+2019-11-15 23:32:25,484|root        |INFO    |topic|sensor/1|message|2019-11-15|23:32:25|4
+2019-11-15 23:32:25,495|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:32:25,495|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:32:25Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 4}}]
+2019-11-15 23:32:30,500|root        |INFO    |topic|sensor/1|message|2019-11-15|23:32:30|3
+2019-11-15 23:32:30,510|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:32:30,510|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:32:30Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 3}}]
+2019-11-15 23:32:35,512|root        |INFO    |topic|sensor/1|message|2019-11-15|23:32:35|8
+2019-11-15 23:32:35,522|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:32:35,522|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:32:35Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 8}}]
+2019-11-15 23:32:40,526|root        |INFO    |topic|sensor/1|message|2019-11-15|23:32:40|5
+2019-11-15 23:32:40,536|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:32:40,536|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:32:40Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 5}}]
+2019-11-15 23:32:45,537|root        |INFO    |topic|sensor/1|message|2019-11-15|23:32:45|2
+2019-11-15 23:32:45,546|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:32:45,546|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:32:45Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 2}}]
+2019-11-15 23:32:50,551|root        |INFO    |topic|sensor/1|message|2019-11-15|23:32:50|9
+2019-11-15 23:32:50,559|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:32:50,559|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:32:50Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 9}}]
+2019-11-15 23:32:55,564|root        |INFO    |topic|sensor/1|message|2019-11-15|23:32:55|9
+2019-11-15 23:32:55,575|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:32:55,575|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:32:55Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 9}}]
+2019-11-15 23:33:00,580|root        |INFO    |topic|sensor/1|message|2019-11-15|23:33:00|8
+2019-11-15 23:33:00,590|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:33:00,590|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:33:00Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 8}}]
+2019-11-15 23:33:05,596|root        |INFO    |topic|sensor/1|message|2019-11-15|23:33:05|10
+2019-11-15 23:33:05,605|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:33:05,605|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:33:05Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 10}}]
+2019-11-15 23:33:10,610|root        |INFO    |topic|sensor/1|message|2019-11-15|23:33:10|7
+2019-11-15 23:33:10,619|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:33:10,619|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:33:10Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 7}}]
+2019-11-15 23:33:15,625|root        |INFO    |topic|sensor/1|message|2019-11-15|23:33:15|5
+2019-11-15 23:33:15,636|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:33:15,636|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:33:15Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 5}}]
+2019-11-15 23:33:20,640|root        |INFO    |topic|sensor/1|message|2019-11-15|23:33:20|8
+2019-11-15 23:33:20,649|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:33:20,649|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:33:20Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 8}}]
+2019-11-15 23:33:25,652|root        |INFO    |topic|sensor/1|message|2019-11-15|23:33:25|10
+2019-11-15 23:33:25,662|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:33:25,662|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:33:25Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 10}}]
+2019-11-15 23:33:30,666|root        |INFO    |topic|sensor/1|message|2019-11-15|23:33:30|4
+2019-11-15 23:33:30,676|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:33:30,676|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:33:30Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 4}}]
+2019-11-15 23:33:35,677|root        |INFO    |topic|sensor/1|message|2019-11-15|23:33:35|8
+2019-11-15 23:33:35,688|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:33:35,688|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:33:35Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 8}}]
+2019-11-15 23:33:40,691|root        |INFO    |topic|sensor/1|message|2019-11-15|23:33:40|4
+2019-11-15 23:33:40,700|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:33:40,700|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:33:40Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 4}}]
+2019-11-15 23:33:45,705|root        |INFO    |topic|sensor/1|message|2019-11-15|23:33:45|6
+2019-11-15 23:33:45,716|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:33:45,716|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:33:45Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 6}}]
+2019-11-15 23:33:50,717|root        |INFO    |topic|sensor/1|message|2019-11-15|23:33:50|7
+2019-11-15 23:33:50,727|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:33:50,727|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:33:50Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 7}}]
+2019-11-15 23:33:55,728|root        |INFO    |topic|sensor/1|message|2019-11-15|23:33:55|6
+2019-11-15 23:33:55,744|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:33:55,745|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:33:55Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 6}}]
+2019-11-15 23:34:00,748|root        |INFO    |topic|sensor/1|message|2019-11-15|23:34:00|1
+2019-11-15 23:34:00,756|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:34:00,756|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:34:00Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 1}}]
+2019-11-15 23:34:05,760|root        |INFO    |topic|sensor/1|message|2019-11-15|23:34:05|2
+2019-11-15 23:34:05,769|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:34:05,769|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:34:05Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 2}}]
+2019-11-15 23:34:10,772|root        |INFO    |topic|sensor/1|message|2019-11-15|23:34:10|8
+2019-11-15 23:34:10,781|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:34:10,781|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:34:10Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 8}}]
+2019-11-15 23:34:15,785|root        |INFO    |topic|sensor/1|message|2019-11-15|23:34:15|6
+2019-11-15 23:34:15,794|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:34:15,794|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:34:15Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 6}}]
+2019-11-15 23:34:20,797|root        |INFO    |topic|sensor/1|message|2019-11-15|23:34:20|6
+2019-11-15 23:34:20,808|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:34:20,808|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:34:20Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 6}}]
+2019-11-15 23:34:25,814|root        |INFO    |topic|sensor/1|message|2019-11-15|23:34:25|6
+2019-11-15 23:34:25,826|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:34:25,826|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:34:25Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 6}}]
+2019-11-15 23:34:30,828|root        |INFO    |topic|sensor/1|message|2019-11-15|23:34:30|4
+2019-11-15 23:34:30,848|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:34:30,848|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:34:30Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 4}}]
+2019-11-15 23:34:35,852|root        |INFO    |topic|sensor/1|message|2019-11-15|23:34:35|7
+2019-11-15 23:34:35,864|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:34:35,864|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:34:35Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 7}}]
+2019-11-15 23:34:40,869|root        |INFO    |topic|sensor/1|message|2019-11-15|23:34:40|8
+2019-11-15 23:34:40,881|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:34:40,881|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:34:40Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 8}}]
+2019-11-15 23:34:45,886|root        |INFO    |topic|sensor/1|message|2019-11-15|23:34:45|10
+2019-11-15 23:34:45,896|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:34:45,897|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:34:45Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 10}}]
+2019-11-15 23:34:50,900|root        |INFO    |topic|sensor/1|message|2019-11-15|23:34:50|2
+2019-11-15 23:34:50,913|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:34:50,913|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:34:50Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 2}}]
+2019-11-15 23:34:55,916|root        |INFO    |topic|sensor/1|message|2019-11-15|23:34:55|9
+2019-11-15 23:34:55,927|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:34:55,927|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:34:55Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 9}}]
+2019-11-15 23:35:00,932|root        |INFO    |topic|sensor/1|message|2019-11-15|23:35:00|8
+2019-11-15 23:35:00,944|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:35:00,944|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:35:00Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 8}}]
+2019-11-15 23:35:05,950|root        |INFO    |topic|sensor/1|message|2019-11-15|23:35:05|5
+2019-11-15 23:35:05,961|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:35:05,961|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:35:05Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 5}}]
+2019-11-15 23:35:10,965|root        |INFO    |topic|sensor/1|message|2019-11-15|23:35:10|9
+2019-11-15 23:35:10,977|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:35:10,977|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:35:10Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 9}}]
+2019-11-15 23:35:15,980|root        |INFO    |topic|sensor/1|message|2019-11-15|23:35:15|8
+2019-11-15 23:35:15,991|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:35:15,991|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:35:15Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 8}}]
+2019-11-15 23:35:20,994|root        |INFO    |topic|sensor/1|message|2019-11-15|23:35:20|2
+2019-11-15 23:35:21,005|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:35:21,005|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:35:20Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 2}}]
+2019-11-15 23:35:26,010|root        |INFO    |topic|sensor/1|message|2019-11-15|23:35:26|1
+2019-11-15 23:35:26,020|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:35:26,020|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:35:26Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 1}}]
+2019-11-15 23:35:31,025|root        |INFO    |topic|sensor/1|message|2019-11-15|23:35:31|5
+2019-11-15 23:35:31,035|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:35:31,035|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:35:31Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 5}}]
+2019-11-15 23:35:36,041|root        |INFO    |topic|sensor/1|message|2019-11-15|23:35:36|6
+2019-11-15 23:35:36,050|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:35:36,050|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:35:36Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 6}}]
+2019-11-15 23:35:41,053|root        |INFO    |topic|sensor/1|message|2019-11-15|23:35:41|8
+2019-11-15 23:35:41,063|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:35:41,063|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:35:41Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 8}}]
+2019-11-15 23:35:46,067|root        |INFO    |topic|sensor/1|message|2019-11-15|23:35:46|3
+2019-11-15 23:35:46,078|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:35:46,079|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:35:46Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 3}}]
+2019-11-15 23:35:51,083|root        |INFO    |topic|sensor/1|message|2019-11-15|23:35:51|1
+2019-11-15 23:35:51,094|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:35:51,094|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:35:51Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 1}}]
+2019-11-15 23:35:56,098|root        |INFO    |topic|sensor/1|message|2019-11-15|23:35:56|6
+2019-11-15 23:35:56,111|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:35:56,111|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:35:56Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 6}}]
+2019-11-15 23:36:01,113|root        |INFO    |topic|sensor/1|message|2019-11-15|23:36:01|9
+2019-11-15 23:36:01,125|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:36:01,125|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:36:01Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 9}}]
+2019-11-15 23:36:06,126|root        |INFO    |topic|sensor/1|message|2019-11-15|23:36:06|4
+2019-11-15 23:36:06,135|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:36:06,135|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:36:06Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 4}}]
+2019-11-15 23:36:11,137|root        |INFO    |topic|sensor/1|message|2019-11-15|23:36:11|10
+2019-11-15 23:36:11,147|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:36:11,147|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:36:11Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 10}}]
+2019-11-15 23:36:16,152|root        |INFO    |topic|sensor/1|message|2019-11-15|23:36:16|1
+2019-11-15 23:36:16,161|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:36:16,161|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:36:16Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 1}}]
+2019-11-15 23:36:21,166|root        |INFO    |topic|sensor/1|message|2019-11-15|23:36:21|7
+2019-11-15 23:36:21,187|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:36:21,187|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:36:21Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 7}}]
+2019-11-15 23:36:26,191|root        |INFO    |topic|sensor/1|message|2019-11-15|23:36:26|8
+2019-11-15 23:36:26,200|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:36:26,200|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:36:26Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 8}}]
+2019-11-15 23:36:31,203|root        |INFO    |topic|sensor/1|message|2019-11-15|23:36:31|7
+2019-11-15 23:36:31,230|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:36:31,230|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:36:31Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 7}}]
+2019-11-15 23:36:36,235|root        |INFO    |topic|sensor/1|message|2019-11-15|23:36:36|8
+2019-11-15 23:36:36,244|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:36:36,244|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:36:36Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 8}}]
+2019-11-15 23:36:41,250|root        |INFO    |topic|sensor/1|message|2019-11-15|23:36:41|8
+2019-11-15 23:36:41,258|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:36:41,258|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:36:41Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 8}}]
+2019-11-15 23:36:46,263|root        |INFO    |topic|sensor/1|message|2019-11-15|23:36:46|10
+2019-11-15 23:36:46,272|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:36:46,272|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:36:46Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 10}}]
+2019-11-15 23:36:51,277|root        |INFO    |topic|sensor/1|message|2019-11-15|23:36:51|9
+2019-11-15 23:36:51,285|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:36:51,285|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:36:51Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 9}}]
+2019-11-15 23:36:56,289|root        |INFO    |topic|sensor/1|message|2019-11-15|23:36:56|3
+2019-11-15 23:36:56,299|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:36:56,299|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:36:56Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 3}}]
+2019-11-15 23:37:01,303|root        |INFO    |topic|sensor/1|message|2019-11-15|23:37:01|4
+2019-11-15 23:37:01,313|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:37:01,313|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:37:01Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 4}}]
+2019-11-15 23:37:06,318|root        |INFO    |topic|sensor/1|message|2019-11-15|23:37:06|7
+2019-11-15 23:37:06,328|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:37:06,328|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:37:06Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 7}}]
+2019-11-15 23:37:11,334|root        |INFO    |topic|sensor/1|message|2019-11-15|23:37:11|7
+2019-11-15 23:37:11,342|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:37:11,343|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:37:11Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 7}}]
+2019-11-15 23:37:16,347|root        |INFO    |topic|sensor/1|message|2019-11-15|23:37:16|1
+2019-11-15 23:37:16,359|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:37:16,359|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:37:16Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 1}}]
+2019-11-15 23:37:21,363|root        |INFO    |topic|sensor/1|message|2019-11-15|23:37:21|10
+2019-11-15 23:37:21,373|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:37:21,373|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:37:21Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 10}}]
+2019-11-15 23:37:26,378|root        |INFO    |topic|sensor/1|message|2019-11-15|23:37:26|6
+2019-11-15 23:37:26,390|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:37:26,390|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:37:26Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 6}}]
+2019-11-15 23:37:31,397|root        |INFO    |topic|sensor/1|message|2019-11-15|23:37:31|5
+2019-11-15 23:37:31,418|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:37:31,418|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:37:31Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 5}}]
+2019-11-15 23:37:36,423|root        |INFO    |topic|sensor/1|message|2019-11-15|23:37:36|9
+2019-11-15 23:37:36,433|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:37:36,434|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:37:36Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 9}}]
+2019-11-15 23:37:41,439|root        |INFO    |topic|sensor/1|message|2019-11-15|23:37:41|3
+2019-11-15 23:37:41,450|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:37:41,450|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:37:41Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 3}}]
+2019-11-15 23:37:46,454|root        |INFO    |topic|sensor/1|message|2019-11-15|23:37:46|4
+2019-11-15 23:37:46,585|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:37:46,585|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:37:46Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 4}}]
+2019-11-15 23:37:51,589|root        |INFO    |topic|sensor/1|message|2019-11-15|23:37:51|6
+2019-11-15 23:37:51,601|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:37:51,601|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:37:51Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 6}}]
+2019-11-15 23:37:56,603|root        |INFO    |topic|sensor/1|message|2019-11-15|23:37:56|8
+2019-11-15 23:37:56,618|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:37:56,618|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:37:56Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 8}}]
+2019-11-15 23:38:01,623|root        |INFO    |topic|sensor/1|message|2019-11-15|23:38:01|9
+2019-11-15 23:38:01,632|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:38:01,632|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:38:01Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 9}}]
+2019-11-15 23:38:06,633|root        |INFO    |topic|sensor/1|message|2019-11-15|23:38:06|9
+2019-11-15 23:38:06,642|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:38:06,642|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:38:06Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 9}}]
+2019-11-15 23:38:11,644|root        |INFO    |topic|sensor/1|message|2019-11-15|23:38:11|4
+2019-11-15 23:38:11,654|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:38:11,654|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:38:11Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 4}}]
+2019-11-15 23:38:16,658|root        |INFO    |topic|sensor/1|message|2019-11-15|23:38:16|6
+2019-11-15 23:38:16,668|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:38:16,668|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:38:16Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 6}}]
+2019-11-15 23:38:21,672|root        |INFO    |topic|sensor/1|message|2019-11-15|23:38:21|9
+2019-11-15 23:38:21,682|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:38:21,682|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:38:21Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 9}}]
+2019-11-15 23:38:26,687|root        |INFO    |topic|sensor/1|message|2019-11-15|23:38:26|9
+2019-11-15 23:38:26,696|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:38:26,696|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:38:26Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 9}}]
+2019-11-15 23:38:31,701|root        |INFO    |topic|sensor/1|message|2019-11-15|23:38:31|1
+2019-11-15 23:38:31,711|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:38:31,712|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:38:31Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 1}}]
+2019-11-15 23:38:36,713|root        |INFO    |topic|sensor/1|message|2019-11-15|23:38:36|1
+2019-11-15 23:38:36,724|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:38:36,724|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:38:36Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 1}}]
+2019-11-15 23:38:41,728|root        |INFO    |topic|sensor/1|message|2019-11-15|23:38:41|5
+2019-11-15 23:38:41,740|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:38:41,740|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:38:41Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 5}}]
+2019-11-15 23:38:46,745|root        |INFO    |topic|sensor/1|message|2019-11-15|23:38:46|7
+2019-11-15 23:38:46,757|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:38:46,757|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:38:46Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 7}}]
+2019-11-15 23:38:51,761|root        |INFO    |topic|sensor/1|message|2019-11-15|23:38:51|8
+2019-11-15 23:38:51,771|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:38:51,771|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:38:51Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 8}}]
+2019-11-15 23:38:56,775|root        |INFO    |topic|sensor/1|message|2019-11-15|23:38:56|5
+2019-11-15 23:38:56,788|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:38:56,788|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:38:56Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 5}}]
+2019-11-15 23:39:01,791|root        |INFO    |topic|sensor/1|message|2019-11-15|23:39:01|3
+2019-11-15 23:39:01,802|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:39:01,802|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:39:01Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 3}}]
+2019-11-15 23:39:06,802|root        |INFO    |topic|sensor/1|message|2019-11-15|23:39:06|10
+2019-11-15 23:39:06,812|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:39:06,812|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:39:06Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 10}}]
+2019-11-15 23:39:11,816|root        |INFO    |topic|sensor/1|message|2019-11-15|23:39:11|8
+2019-11-15 23:39:11,826|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:39:11,826|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:39:11Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 8}}]
+2019-11-15 23:39:16,828|root        |INFO    |topic|sensor/1|message|2019-11-15|23:39:16|8
+2019-11-15 23:39:16,838|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:39:16,838|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:39:16Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 8}}]
+2019-11-15 23:39:21,843|root        |INFO    |topic|sensor/1|message|2019-11-15|23:39:21|7
+2019-11-15 23:39:21,855|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:39:21,855|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:39:21Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 7}}]
+2019-11-15 23:39:26,860|root        |INFO    |topic|sensor/1|message|2019-11-15|23:39:26|9
+2019-11-15 23:39:26,871|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:39:26,871|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:39:26Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 9}}]
+2019-11-15 23:39:31,874|root        |INFO    |topic|sensor/1|message|2019-11-15|23:39:31|7
+2019-11-15 23:39:31,884|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:39:31,884|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:39:31Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 7}}]
+2019-11-15 23:39:36,889|root        |INFO    |topic|sensor/1|message|2019-11-15|23:39:36|8
+2019-11-15 23:39:36,899|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:39:36,899|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:39:36Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 8}}]
+2019-11-15 23:39:41,903|root        |INFO    |topic|sensor/1|message|2019-11-15|23:39:41|9
+2019-11-15 23:39:41,912|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:39:41,913|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:39:41Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 9}}]
+2019-11-15 23:39:46,917|root        |INFO    |topic|sensor/1|message|2019-11-15|23:39:46|7
+2019-11-15 23:39:46,927|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:39:46,927|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:39:46Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 7}}]
+2019-11-15 23:39:51,928|root        |INFO    |topic|sensor/1|message|2019-11-15|23:39:51|3
+2019-11-15 23:39:51,938|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:39:51,938|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:39:51Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 3}}]
+2019-11-15 23:39:56,943|root        |INFO    |topic|sensor/1|message|2019-11-15|23:39:56|8
+2019-11-15 23:39:56,953|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:39:56,953|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:39:56Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 8}}]
+2019-11-15 23:40:01,954|root        |INFO    |topic|sensor/1|message|2019-11-15|23:40:01|2
+2019-11-15 23:40:01,963|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:40:01,963|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:40:01Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 2}}]
+2019-11-15 23:40:06,968|root        |INFO    |topic|sensor/1|message|2019-11-15|23:40:06|1
+2019-11-15 23:40:06,977|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:40:06,977|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:40:06Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 1}}]
+2019-11-15 23:40:11,979|root        |INFO    |topic|sensor/1|message|2019-11-15|23:40:11|10
+2019-11-15 23:40:11,991|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:40:11,991|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:40:11Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 10}}]
+2019-11-15 23:40:16,995|root        |INFO    |topic|sensor/1|message|2019-11-15|23:40:16|1
+2019-11-15 23:40:17,004|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:40:17,004|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:40:16Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 1}}]
+2019-11-15 23:40:22,010|root        |INFO    |topic|sensor/1|message|2019-11-15|23:40:22|6
+2019-11-15 23:40:22,018|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:40:22,019|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:40:22Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 6}}]
+2019-11-15 23:40:27,019|root        |INFO    |topic|sensor/1|message|2019-11-15|23:40:27|1
+2019-11-15 23:40:27,029|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:40:27,029|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:40:27Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 1}}]
+2019-11-15 23:40:32,033|root        |INFO    |topic|sensor/1|message|2019-11-15|23:40:32|2
+2019-11-15 23:40:32,042|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:40:32,042|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:40:32Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 2}}]
+2019-11-15 23:40:37,045|root        |INFO    |topic|sensor/1|message|2019-11-15|23:40:37|9
+2019-11-15 23:40:37,053|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:40:37,054|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:40:37Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 9}}]
+2019-11-15 23:40:42,058|root        |INFO    |topic|sensor/1|message|2019-11-15|23:40:42|8
+2019-11-15 23:40:42,066|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:40:42,066|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:40:42Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 8}}]
+2019-11-15 23:40:47,069|root        |INFO    |topic|sensor/1|message|2019-11-15|23:40:47|5
+2019-11-15 23:40:47,077|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:40:47,077|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:40:47Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 5}}]
+2019-11-15 23:40:52,080|root        |INFO    |topic|sensor/1|message|2019-11-15|23:40:52|7
+2019-11-15 23:40:52,088|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:40:52,088|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:40:52Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 7}}]
+2019-11-15 23:40:57,093|root        |INFO    |topic|sensor/1|message|2019-11-15|23:40:57|8
+2019-11-15 23:40:57,101|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:40:57,101|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:40:57Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 8}}]
+2019-11-15 23:41:02,105|root        |INFO    |topic|sensor/1|message|2019-11-15|23:41:02|8
+2019-11-15 23:41:02,114|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:41:02,114|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:41:02Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 8}}]
+2019-11-15 23:41:07,118|root        |INFO    |topic|sensor/1|message|2019-11-15|23:41:07|10
+2019-11-15 23:41:07,127|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:41:07,127|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:41:07Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 10}}]
+2019-11-15 23:41:12,128|root        |INFO    |topic|sensor/1|message|2019-11-15|23:41:12|9
+2019-11-15 23:41:12,137|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:41:12,137|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:41:12Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 9}}]
+2019-11-15 23:41:17,142|root        |INFO    |topic|sensor/1|message|2019-11-15|23:41:17|4
+2019-11-15 23:41:17,151|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:41:17,152|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:41:17Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 4}}]
+2019-11-15 23:41:22,155|root        |INFO    |topic|sensor/1|message|2019-11-15|23:41:22|3
+2019-11-15 23:41:22,163|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:41:22,163|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:41:22Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 3}}]
+2019-11-15 23:41:27,167|root        |INFO    |topic|sensor/1|message|2019-11-15|23:41:27|4
+2019-11-15 23:41:27,182|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:41:27,182|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:41:27Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 4}}]
+2019-11-15 23:41:32,185|root        |INFO    |topic|sensor/1|message|2019-11-15|23:41:32|4
+2019-11-15 23:41:32,194|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:41:32,194|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:41:32Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 4}}]
+2019-11-15 23:41:37,198|root        |INFO    |topic|sensor/1|message|2019-11-15|23:41:37|3
+2019-11-15 23:41:37,208|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:41:37,208|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:41:37Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 3}}]
+2019-11-15 23:41:42,213|root        |INFO    |topic|sensor/1|message|2019-11-15|23:41:42|1
+2019-11-15 23:41:42,223|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:41:42,223|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:41:42Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 1}}]
+2019-11-15 23:41:47,224|root        |INFO    |topic|sensor/1|message|2019-11-15|23:41:47|6
+2019-11-15 23:41:47,234|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:41:47,234|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:41:47Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 6}}]
+2019-11-15 23:41:52,239|root        |INFO    |topic|sensor/1|message|2019-11-15|23:41:52|10
+2019-11-15 23:41:52,251|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:41:52,252|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:41:52Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 10}}]
+2019-11-15 23:41:57,257|root        |INFO    |topic|sensor/1|message|2019-11-15|23:41:57|2
+2019-11-15 23:41:57,267|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:41:57,267|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:41:57Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 2}}]
+2019-11-15 23:42:02,269|root        |INFO    |topic|sensor/1|message|2019-11-15|23:42:02|3
+2019-11-15 23:42:02,280|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:42:02,280|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:42:02Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 3}}]
+2019-11-15 23:42:07,284|root        |INFO    |topic|sensor/1|message|2019-11-15|23:42:07|3
+2019-11-15 23:42:07,297|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:42:07,297|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:42:07Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 3}}]
+2019-11-15 23:42:12,301|root        |INFO    |topic|sensor/1|message|2019-11-15|23:42:12|4
+2019-11-15 23:42:12,312|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:42:12,312|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:42:12Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 4}}]
+2019-11-15 23:42:17,314|root        |INFO    |topic|sensor/1|message|2019-11-15|23:42:17|10
+2019-11-15 23:42:17,329|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:42:17,329|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:42:17Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 10}}]
+2019-11-15 23:42:22,334|root        |INFO    |topic|sensor/1|message|2019-11-15|23:42:22|8
+2019-11-15 23:42:22,347|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:42:22,347|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:42:22Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 8}}]
+2019-11-15 23:42:27,352|root        |INFO    |topic|sensor/1|message|2019-11-15|23:42:27|6
+2019-11-15 23:42:27,365|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:42:27,365|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:42:27Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 6}}]
+2019-11-15 23:42:32,370|root        |INFO    |topic|sensor/1|message|2019-11-15|23:42:32|4
+2019-11-15 23:42:32,382|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:42:32,382|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:42:32Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 4}}]
+2019-11-15 23:42:37,386|root        |INFO    |topic|sensor/1|message|2019-11-15|23:42:37|3
+2019-11-15 23:42:37,396|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:42:37,396|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:42:37Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 3}}]
+2019-11-15 23:42:42,400|root        |INFO    |topic|sensor/1|message|2019-11-15|23:42:42|3
+2019-11-15 23:42:42,414|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:42:42,414|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:42:42Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 3}}]
+2019-11-15 23:42:47,415|root        |INFO    |topic|sensor/1|message|2019-11-15|23:42:47|1
+2019-11-15 23:42:47,426|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:42:47,426|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:42:47Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 1}}]
+2019-11-15 23:42:52,430|root        |INFO    |topic|sensor/1|message|2019-11-15|23:42:52|3
+2019-11-15 23:42:52,438|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:42:52,438|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:42:52Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 3}}]
+2019-11-15 23:42:57,443|root        |INFO    |topic|sensor/1|message|2019-11-15|23:42:57|8
+2019-11-15 23:42:57,455|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:42:57,455|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:42:57Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 8}}]
+2019-11-15 23:43:02,459|root        |INFO    |topic|sensor/1|message|2019-11-15|23:43:02|9
+2019-11-15 23:43:02,468|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:43:02,468|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:43:02Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 9}}]
+2019-11-15 23:43:07,471|root        |INFO    |topic|sensor/1|message|2019-11-15|23:43:07|8
+2019-11-15 23:43:07,482|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:43:07,482|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:43:07Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 8}}]
+2019-11-15 23:43:12,486|root        |INFO    |topic|sensor/1|message|2019-11-15|23:43:12|9
+2019-11-15 23:43:12,497|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:43:12,497|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:43:12Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 9}}]
+2019-11-15 23:43:17,502|root        |INFO    |topic|sensor/1|message|2019-11-15|23:43:17|3
+2019-11-15 23:43:17,513|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:43:17,513|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:43:17Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 3}}]
+2019-11-15 23:43:22,518|root        |INFO    |topic|sensor/1|message|2019-11-15|23:43:22|5
+2019-11-15 23:43:22,531|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:43:22,531|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:43:22Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 5}}]
+2019-11-15 23:43:27,537|root        |INFO    |topic|sensor/1|message|2019-11-15|23:43:27|7
+2019-11-15 23:43:27,551|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:43:27,551|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:43:27Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 7}}]
+2019-11-15 23:43:32,555|root        |INFO    |topic|sensor/1|message|2019-11-15|23:43:32|7
+2019-11-15 23:43:32,566|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:43:32,567|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:43:32Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 7}}]
+2019-11-15 23:43:37,570|root        |INFO    |topic|sensor/1|message|2019-11-15|23:43:37|8
+2019-11-15 23:43:37,580|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:43:37,580|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:43:37Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 8}}]
+2019-11-15 23:43:42,585|root        |INFO    |topic|sensor/1|message|2019-11-15|23:43:42|4
+2019-11-15 23:43:42,595|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:43:42,595|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:43:42Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 4}}]
+2019-11-15 23:43:47,601|root        |INFO    |topic|sensor/1|message|2019-11-15|23:43:47|2
+2019-11-15 23:43:47,614|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:43:47,614|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:43:47Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 2}}]
+2019-11-15 23:43:52,614|root        |INFO    |topic|sensor/1|message|2019-11-15|23:43:52|7
+2019-11-15 23:43:52,625|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:43:52,625|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:43:52Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 7}}]
+2019-11-15 23:43:57,630|root        |INFO    |topic|sensor/1|message|2019-11-15|23:43:57|4
+2019-11-15 23:43:57,640|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:43:57,640|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:43:57Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 4}}]
+2019-11-15 23:44:02,645|root        |INFO    |topic|sensor/1|message|2019-11-15|23:44:02|1
+2019-11-15 23:44:02,656|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:44:02,656|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:44:02Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 1}}]
+2019-11-15 23:44:07,661|root        |INFO    |topic|sensor/1|message|2019-11-15|23:44:07|6
+2019-11-15 23:44:07,671|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:44:07,672|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:44:07Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 6}}]
+2019-11-15 23:44:12,676|root        |INFO    |topic|sensor/1|message|2019-11-15|23:44:12|3
+2019-11-15 23:44:12,687|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:44:12,687|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:44:12Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 3}}]
+2019-11-15 23:44:17,695|root        |INFO    |topic|sensor/1|message|2019-11-15|23:44:17|1
+2019-11-15 23:44:17,711|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:44:17,711|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:44:17Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 1}}]
+2019-11-15 23:44:22,715|root        |INFO    |topic|sensor/1|message|2019-11-15|23:44:22|3
+2019-11-15 23:44:22,725|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:44:22,725|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:44:22Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 3}}]
+2019-11-15 23:44:27,730|root        |INFO    |topic|sensor/1|message|2019-11-15|23:44:27|7
+2019-11-15 23:44:27,740|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:44:27,740|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:44:27Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 7}}]
+2019-11-15 23:44:32,744|root        |INFO    |topic|sensor/1|message|2019-11-15|23:44:32|8
+2019-11-15 23:44:32,754|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:44:32,754|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:44:32Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 8}}]
+2019-11-15 23:44:37,759|root        |INFO    |topic|sensor/1|message|2019-11-15|23:44:37|2
+2019-11-15 23:44:37,769|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:44:37,769|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:44:37Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 2}}]
+2019-11-15 23:44:42,772|root        |INFO    |topic|sensor/1|message|2019-11-15|23:44:42|5
+2019-11-15 23:44:42,783|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:44:42,783|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:44:42Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 5}}]
+2019-11-15 23:44:47,787|root        |INFO    |topic|sensor/1|message|2019-11-15|23:44:47|2
+2019-11-15 23:44:47,797|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:44:47,797|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:44:47Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 2}}]
+2019-11-15 23:44:52,801|root        |INFO    |topic|sensor/1|message|2019-11-15|23:44:52|9
+2019-11-15 23:44:52,811|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:44:52,812|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:44:52Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 9}}]
+2019-11-15 23:44:57,817|root        |INFO    |topic|sensor/1|message|2019-11-15|23:44:57|5
+2019-11-15 23:44:57,825|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:44:57,825|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:44:57Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 5}}]
+2019-11-15 23:45:02,829|root        |INFO    |topic|sensor/1|message|2019-11-15|23:45:02|6
+2019-11-15 23:45:02,842|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:45:02,842|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:45:02Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 6}}]
+2019-11-15 23:45:07,847|root        |INFO    |topic|sensor/1|message|2019-11-15|23:45:07|3
+2019-11-15 23:45:07,858|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:45:07,858|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:45:07Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 3}}]
+2019-11-15 23:45:12,862|root        |INFO    |topic|sensor/1|message|2019-11-15|23:45:12|1
+2019-11-15 23:45:12,872|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:45:12,873|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:45:12Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 1}}]
+2019-11-15 23:45:17,877|root        |INFO    |topic|sensor/1|message|2019-11-15|23:45:17|7
+2019-11-15 23:45:17,888|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:45:17,888|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:45:17Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 7}}]
+2019-11-15 23:45:22,892|root        |INFO    |topic|sensor/1|message|2019-11-15|23:45:22|7
+2019-11-15 23:45:22,904|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:45:22,904|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:45:22Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 7}}]
+2019-11-15 23:45:27,909|root        |INFO    |topic|sensor/1|message|2019-11-15|23:45:27|2
+2019-11-15 23:45:27,919|root        |INFO    |data inserted on db: sensor_datatable: sensor_data
+2019-11-15 23:45:27,919|root        |INFO    |data inserted:[{'measurement': 'sensor_data', 'time': '2019-11-15T23:45:27Z', 'tags': {'sensorId': '1'}, 'fields': {'value': 2}}]
