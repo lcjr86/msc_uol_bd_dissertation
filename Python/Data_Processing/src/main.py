@@ -72,7 +72,7 @@ class ConnectAndFilter():
                         }
                     }
                 ]
-
+                print(str(json_body))
                 client.write_points(json_body)
 
         if(load_to_db == "mongodb"):
@@ -88,7 +88,7 @@ if __name__ == "__main__":
         load_to_db = "influxdb"
         #load_to_db = "mongodb"
 
-        if(load_to_db == "influxfb"):
+        if(load_to_db == "influxdb"):
             db_name = 'edge_data'
             client = InfluxDBClient('10.0.2.2', 8086, 'root', 'root', db_name)
             client.drop_database(db_name)
