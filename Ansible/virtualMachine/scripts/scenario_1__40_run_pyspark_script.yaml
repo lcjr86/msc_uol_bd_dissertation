@@ -1,0 +1,22 @@
+---
+
+- hosts: master
+  tasks:
+    - name: Replace 'run_spark_scenario_*.sh' for the one corresponding to the scenario
+      copy:
+        src: "/Users/lcjr86/Dropbox/MSc - Liverpool/CKIT-702--Computing Advisor Class/Implementation/msc_uol_dissertation/Ansible/run_spark/run_spark_scenario_1.sh"
+        dest: "/opt/hadoop/spark/bin/run_spark_scenario_1.sh"
+
+    - name: Give the right permission to run the .sh
+      shell: chmod +x run_spark_scenario_1.sh
+      args:
+        chdir: /opt/hadoop/spark/bin/
+      become: true
+      become_user: root
+
+    # - name: Run pySpark script - run_spark_scenario_1.sh
+    #   shell: /opt/hadoop/spark/bin/run_spark_scenario_1.sh
+    #   args:
+    #     executable: /bin/bash
+    #   become: true
+    #   become_user: root
