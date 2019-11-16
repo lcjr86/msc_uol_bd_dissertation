@@ -82,7 +82,7 @@ class ConnectAndFilter():
             sensor_message_filtered.foreachRDD(lambda x: sendToMongoDB(x))
 
         if(load_to_db == "influxdb"):
-            sensor_message_filtered.foreachRDD(lambda x: sendToInfluxDB(x, self.sensorId))
+            sensor_message_filtered.foreachRDD(lambda x: sendToInfluxDB(x))
 
 if __name__ == "__main__":
     
