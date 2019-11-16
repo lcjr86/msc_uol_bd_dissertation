@@ -1,5 +1,0 @@
----
-- import_playbook: scenario_1__run_sensor_emulator.yaml
-- import_playbook: scenario_1__create_kafka_topic.yaml
-- import_playbook: scenario_1__run_mqtt_kafka_bridge.yaml
-#- import_playbook: scenario_1__run_pyspark_script.yaml
