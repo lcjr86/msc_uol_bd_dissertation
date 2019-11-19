@@ -13,4 +13,5 @@ Python virtual environment folder
 ## References
 
 https://github.com/influxdata/influxdb-python
-
+https://www.influxdata.com/blog/getting-started-python-influxdb/
+https://docs.influxdata.com/influxdb/v1.7/introduction/getting-started/
