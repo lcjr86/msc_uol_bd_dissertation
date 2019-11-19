@@ -1,6 +1,0 @@
----
-- hosts: localhost
-  tasks:
-
-
-# Reference: https://github.com/JamesOsgood/mongodb-grafana

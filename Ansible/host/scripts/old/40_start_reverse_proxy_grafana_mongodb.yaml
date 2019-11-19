@@ -1,9 +1,0 @@
----
-- hosts: localhost
-  tasks:          
-    - name: Run Grafana-MongoDB reverse proxy
-      shell: nohup npm run server &
-      args:
-        chdir: /usr/local/var/lib/grafana/plugins/mongodb-grafana/
-
-# Reference: https://github.com/JamesOsgood/mongodb-grafana#install-and-start-the-mongodb-proxy-server

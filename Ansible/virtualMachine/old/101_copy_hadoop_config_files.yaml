@@ -1,7 +1,0 @@
----
-- hosts: cluster
-  tasks:
-    - name: Copy 'core-site.xml' from local to the cluster
-      shell: scp /Users/lcjr86/Dropbox/RPi_Cluster/hadoop_2-6-5/config/core-site.xml lcjr86@192.168.56.101:/opt/hadoop/hadoop/etc/hadoop/core-site.xml
-      become: true
-      become_user: root

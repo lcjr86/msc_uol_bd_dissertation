@@ -1,8 +1,0 @@
----
-- hosts: slave01
-  tasks:
-    - name: Copy from Master ('/opt/hadoop/hadoop' files) to the slave01
-      synchronize:
-        src: /opt/hadoop/hadoop/
-        dest: /opt/hadoop/hadoop/
-      delegate_to: master
