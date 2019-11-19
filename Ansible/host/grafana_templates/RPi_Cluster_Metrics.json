@@ -1217,7 +1217,7 @@
     "list": []
   },
   "time": {
-    "from": "now-1h",
+    "from": "now-6h",
     "to": "now"
   },
   "timepicker": {
@@ -1237,5 +1237,5 @@
   "timezone": "",
   "title": "RPi Cluster metrics",
   "uid": "8rnLCxJWk",
-  "version": 54
+  "version": 55
 }

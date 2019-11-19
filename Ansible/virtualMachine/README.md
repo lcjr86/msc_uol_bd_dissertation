@@ -17,15 +17,14 @@ Machine 2 name: RPi2 (OS: rpi2)
 ### Raspian Desktop
 Virtual Machine Engine: Virtual Box
 OS: Debian Stretch with Raspberry Pi Desktop (Debian 9)
-RAM: 1GB
+RAM: 2GB
 Storage: 10GB (32GB for the RPi3)
 Processor: 1 CPU
 
 (depricated) Machine 1 name: RPi3 (OS: rpi3) static_ip: 192.168.56.102
 Machine 1 name: RPi3_new (OS: rpi3) static_ip: 192.168.56.103
-Machine 2 name: RPi4 (OS: rpi4)
-Machine 3 name: RPi5 (OS: rpi5)
-Machine 4 name: RPi6 (OS: rpi6)
+Machine 2 name: RPi4 (OS: rpi4) static_ip: 192.168.56.202
+Machine 3 name: RPi5 (OS: rpi5) static_ip: 192.168.56.203
 
 #### Raspian configurations
 
@@ -33,16 +32,6 @@ Machine 4 name: RPi6 (OS: rpi6)
 > RaspberryPi Configuration > Interface > SSH: enable
 
 ## Set static IP
-
-### on the VM with Ubuntu Server 18.04s
-
-Reference:
-
-https://www.codesandnotes.be/2018/10/16/network-of-virtualbox-instances-with-static-ip-addresses-and-internet-access/ (until 'Port-forwarding')
-
-Reference:
-
-https://www.ostechnix.com/how-to-configure-ip-address-in-ubuntu-18-04-lts/ (static IP configurations)
 
 ### on the VM with Raspian Desktop
 
@@ -67,9 +56,3 @@ static domain_name_servers=192.168.56.1
 ```
 
 https://thepihut.com/blogs/raspberry-pi-tutorials/how-to-give-your-raspberry-pi-a-static-ip-address-update
-
-# Ansible playbooks
-
-# Install the image from virtualbox
-
-TO-DO: Make available the images from the VirtualBox

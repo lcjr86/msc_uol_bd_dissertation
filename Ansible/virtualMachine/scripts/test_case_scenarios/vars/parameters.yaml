@@ -1,0 +1,7 @@
+---
+localhost_repo_path: '/Users/lcjr86/Dropbox/MSc - Liverpool/CKIT-702--Computing Advisor Class/Implementation'
+localhost_MQTT_Kafka_bridge_test_case_scenarios_config_files_path: "{{ localhost_repo_path }}/msc_uol_dissertation/Ansible/MQTT_Kafka_bridge/config"
+localhost_Clean_InfluxDB_path: "{{ localhost_repo_path }}/msc_uol_dissertation/Python/Clean_influxDB"
+localhost_Sensor_Emulator_test_case_scenarios_config_files_path: "{{ localhost_repo_path }}/msc_uol_dissertation/Ansible/Sensor_Emulator/config"
+localhost_Sensor_Emulator_config_files_path: "{{ localhost_repo_path }}/msc_uol_dissertation/Python/Sensor_Emulator/config"
+localhost_Sensor_Emulator_path: "{{ localhost_repo_path }}/msc_uol_dissertation/Python/Sensor_Emulator"

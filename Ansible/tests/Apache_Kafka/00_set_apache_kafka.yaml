@@ -1,5 +1,0 @@
----
-- import_playbook: 20_install_apache_kafka_2-3-0.yaml
-- import_playbook: 30_start_zookeeper.yaml
-- import_playbook: 40_start_kafka.yaml
-- import_playbook: 50_create_kafka_topic.yaml

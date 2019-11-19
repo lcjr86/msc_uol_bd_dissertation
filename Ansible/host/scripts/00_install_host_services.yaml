@@ -1,0 +1,5 @@
+---
+
+- import_playbook: 01_install_prometheus.yaml
+- import_playbook: 02_install_grafana.yaml
+- import_playbook: 04_install_influxdb.yaml

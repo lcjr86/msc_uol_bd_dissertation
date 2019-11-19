@@ -1,3 +1,0 @@
----
-- import_playbook: 10_install_Mosquitto_Broker.yaml
-- import_playbook: 11_install_Mosquitto_Client.yaml

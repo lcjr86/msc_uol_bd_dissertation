@@ -4,6 +4,7 @@ To run the Ansible scripts under 'hadoop/scripts/ansible', it is important to
 install ansible on the machine that will be the 'controller'
 
 For more details about 'how to install ansible', click [here](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html).
+
 For Mac OS, check this [link](http://techhowdy.com/install-ansible-mac-osx/).s
 
 ## ssh key generation and distribution
