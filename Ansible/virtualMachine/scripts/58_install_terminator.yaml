@@ -1,9 +1,0 @@
----
-- hosts: cluster
-  tasks:
-
-    - name: Install Terminator #(Multi-terminal tool)
-      apt:
-        name: terminator
-      become: true
-      become_user: root

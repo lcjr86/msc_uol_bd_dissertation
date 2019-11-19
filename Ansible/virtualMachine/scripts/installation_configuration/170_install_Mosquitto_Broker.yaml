@@ -1,0 +1,8 @@
+---
+- hosts: master
+  tasks:
+    - name: Install the MQTT Broker (Mosquitto)
+      apt:
+        name: mosquitto
+      become: true
+      become_user: root

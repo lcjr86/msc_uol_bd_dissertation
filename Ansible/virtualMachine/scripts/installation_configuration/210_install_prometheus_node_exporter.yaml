@@ -1,0 +1,26 @@
+---
+- hosts: cluster
+  tasks:
+    - name: Create Prometheus Node exporter installation directory / folder
+      file:
+        path: /opt/prometheus_node_exporter/
+        state: directory
+        mode: '0775'
+      become: true
+      become_user: root  
+
+    - name: Download Prometheus Node Exporter package
+      get_url:
+        url: https://github.com/prometheus/node_exporter/releases/download/v0.18.1/node_exporter-0.18.1.linux-amd64.tar.gz
+        dest: /opt/prometheus_node_exporter/node_exporter-0.18.1.linux-amd64.tar.gz
+        mode: '0775'
+      become: true
+      become_user: root
+
+    - name: Unzip Prometheus Node Exporter package
+      unarchive:
+        src: /opt/prometheus_node_exporter/node_exporter-0.18.1.linux-amd64.tar.gz
+        dest: /opt/prometheus_node_exporter/
+        remote_src: yes
+      become: true
+      become_user: root

@@ -20,24 +20,39 @@
     <property>
         <name>mapreduce.job.tracker</name>
         <value>master:5431</value>
+        <description>
+            Mapreduce job tracker http address
+        </description>
     </property>
     <property>
         <name>mapred.framework.name</name>
         <value>yarn</value>
+        <description>
+            Set MapReduce to run using Yarn as the main framework
+        </description>
     </property>
     <property>
         <name>yarn.app.mapreduce.am.resource.mb</name>
         <value>512</value>
+        <description>
+            Yarn amount of memory dedicated to run mapreduce jobs
+        </description>
     </property>
 
     <property>
         <name>mapreduce.map.memory.mb</name>
         <value>256</value>
+        <description>
+            Default Mapreduce (map) amount of memory
+        </description>
     </property>
 
     <property>
         <name>mapreduce.reduce.memory.mb</name>
         <value>256</value>
+        <description>
+            Default Mapreduce (reduce) amount of memory
+        </description>
     </property>
 
 </configuration>

@@ -20,9 +20,15 @@
     <property>
         <name>fs.default.name</name>
         <value>hdfs://master:9000/</value>
+        <description>
+          File System default name
+        </description>
     </property>
     <property>
         <name>fs.default.FS</name>
         <value>hdfs://master:9000/</value>
+        <description>
+          Default File System address
+        </description>
     </property>
 </configuration>

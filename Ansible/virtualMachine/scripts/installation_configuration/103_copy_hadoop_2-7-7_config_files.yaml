@@ -1,0 +1,34 @@
+---
+- hosts: cluster
+
+  vars_files:
+    - ./vars/parameters.yml
+
+  tasks:
+    - name: Copy 'core-site.xml' from localhost to the cluster
+      copy:
+        src: "{{ localhost_hadoop_2_7_7_config_files_path }}/core-site.xml"
+        dest: /opt/hadoop/hadoop/etc/hadoop/core-site.xml
+
+
+    - name: Copy 'hdfs-site.xml' from localhost to the cluster
+      copy:
+        src: "{{ localhost_hadoop_2_7_7_config_files_path }}/hdfs-site.xml"
+        dest: /opt/hadoop/hadoop/etc/hadoop/hdfs-site.xml
+
+
+    - name: Copy 'yarn-site.xml' from localhost to the cluster
+      copy:
+        src: "{{ localhost_hadoop_2_7_7_config_files_path }}/yarn-site.xml"
+        dest: /opt/hadoop/hadoop/etc/hadoop/yarn-site.xml
+
+
+    - name: Copy 'mapred-site.xml' from localhost to the cluster
+      copy:
+        src: "{{ localhost_hadoop_2_7_7_config_files_path }}/mapred-site.xml"
+        dest: /opt/hadoop/hadoop/etc/hadoop/mapred-site.xml
+
+    - name: Copy 'capacity-scheduler.xml' from localhost to the cluster
+      copy:
+        src: "{{ localhost_hadoop_2_7_7_config_files_path }}/capacity-scheduler.xml"
+        dest: /opt/hadoop/hadoop/etc/hadoop/capacity-scheduler.xml

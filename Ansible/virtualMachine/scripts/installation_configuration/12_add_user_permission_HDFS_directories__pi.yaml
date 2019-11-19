@@ -1,0 +1,9 @@
+---
+- hosts: cluster
+  tasks:
+    - name: Add user 'pi' to the group 'root'
+      user:
+        name: pi
+        group: root
+      become: true
+      become_user: root

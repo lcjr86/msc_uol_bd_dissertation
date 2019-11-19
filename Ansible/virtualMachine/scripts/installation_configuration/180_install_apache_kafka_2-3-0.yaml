@@ -1,0 +1,26 @@
+---
+- hosts: master
+  tasks:
+    - name: Create Apache Kafka installation directory / folder
+      file:
+        path: /opt/apache_kafka/
+        state: directory
+        mode: '0775'
+      become: true
+      become_user: root  
+
+    - name: Download Kafka 2.3.0 package
+      get_url:
+        url: https://www-eu.apache.org/dist/kafka/2.3.0/kafka_2.12-2.3.0.tgz
+        dest: /opt/apache_kafka/kafka_2.12-2.3.0.tgz
+        mode: '0775'
+      become: true
+      become_user: root
+
+    - name: Unzip Kafka package
+      unarchive:
+        src: /opt/apache_kafka/kafka_2.12-2.3.0.tgz
+        dest: /opt/apache_kafka/
+        remote_src: yes
+      become: true
+      become_user: root

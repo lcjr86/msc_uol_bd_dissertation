@@ -1,9 +1,0 @@
----
-- hosts: master
-  tasks:
-    - name: Create spark logs folder (hdfs dfs -mkdir /spark-logs)
-      shell: /opt/hadoop/hadoop/bin/hdfs dfs -mkdir /spark-logs
-      environment:
-        JAVA_HOME: /usr/lib/jvm/java-1.8.0-openjdk-i386
-      become: true
-      become_user: root

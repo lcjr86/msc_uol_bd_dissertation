@@ -1,0 +1,8 @@
+---
+- hosts: cluster
+  tasks:
+    - name: Start Node Exporter
+      shell: nohup /opt/prometheus_node_exporter/node_exporter-0.18.1.linux-amd64/node_exporter &
+      become: true
+      become_user: root
+      ignore_errors: yes

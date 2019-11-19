@@ -17,66 +17,105 @@
     <property>
         <name>yarn.resourcemanager.resource-tracker.address</name>
         <value>master:8025</value>
+        <description>
+            Yarn resource manager-tracker address
+        </description>
     </property>
 
     <property>
         <name>yarn.resourcemanager.scheduler.address</name>
         <value>master:8035</value>
+        <description>
+            Yarn resource manager-scheduler address
+        </description>
     </property>
 
     <property>
         <name>yarn.resourcemanager.address</name>
         <value>master:8050</value>
+        <description>
+            Yarn resource manager address
+        </description>
     </property>
 
     <property>
         <name>yarn.nodemanager.resource.memory-mb</name>
         <value>1536</value>
+        <description>
+            Memory available for usage (for each Yarn node)
+        </description>
     </property>
 
     <property>
         <name>yarn.scheduler.maximum-allocation-mb</name>
         <value>1536</value>
+        <description>
+            Maximum of memory available for Yarn usage (for each node)
+        </description>
     </property>
 
     <property>
         <name>yarn.scheduler.minimum-allocation-mb</name>
         <value>128</value>
+        <description>
+            Minimun of memory available for Yarn usage (for each node)
+        </description>
     </property>
 
     <property>
         <name>yarn.nodemanager.vmem-check-enabled</name>
         <value>false</value>
+        <description>
+            Yarn virtual memory check set to false
+        </description>
     </property>
 
     <property>
         <name>yarn.nodemanager.pmem-check-enabled</name>
         <value>false</value>
+        <description>
+            Yarn primary memory check set to false
+        </description>
     </property>
 
     <property>
-            <name>yarn.acl.enable</name>
-            <value>0</value>
+        <name>yarn.acl.enable</name>
+        <value>0</value>
+        <description>
+            Access Control List for Yarn is disabled (false)
+        </description>
     </property>
 
     <property>
-            <name>yarn.resourcemanager.hostname</name>
-            <value>192.168.56.103</value>
+        <name>yarn.resourcemanager.hostname</name>
+        <value>192.168.56.103</value>
+        <description>
+            Yarn resource manager hostname / address
+        </description>
     </property>
 
     <property>
-            <name>yarn.nodemanager.aux-services</name>
-            <value>mapreduce_shuffle</value>
+        <name>yarn.nodemanager.aux-services</name>
+        <value>mapreduce_shuffle</value>
+        <description>
+            Yarn configuration to handle mapreduce shuffles
+        </description>
     </property>
 
-  <property>
-     <name>yarn.nodemanager.disk-health-checker.min-healthy-disks</name>
-     <value>0.0</value>
-  </property>
+    <property>
+        <name>yarn.nodemanager.disk-health-checker.min-healthy-disks</name>
+        <value>0.0</value>
+        <description>
+            Set the minimum of health disks to 0 (zero)
+        </description>
+    </property>
   
-  <property>
-     <name>yarn.nodemanager.disk-health-checker.max-disk-utilization-per-disk-percentage</name>
-     <value>100.0</value>
-  </property>    
+    <property>
+        <name>yarn.nodemanager.disk-health-checker.max-disk-utilization-per-disk-percentage</name>
+        <value>100.0</value>
+        <description>
+            Set the disk utilization health check to 100%
+        </description>    
+    </property>    
 
 </configuration>

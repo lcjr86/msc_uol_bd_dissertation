@@ -1,0 +1,20 @@
+---
+- hosts: master
+  tasks:
+    - name: Create and fill the 'master' file for the Hadoop configuration
+      copy:
+        dest: /opt/hadoop/hadoop/etc/hadoop/master
+        content: |
+          master
+      become: true
+      become_user: root
+
+    - name: Create and fill the 'slaves' file for the Hadoop configuration
+      copy:
+        dest: /opt/hadoop/hadoop/etc/hadoop/slaves
+        content: |
+          slave01
+          slave02
+          #slave03
+      become: true
+      become_user: root

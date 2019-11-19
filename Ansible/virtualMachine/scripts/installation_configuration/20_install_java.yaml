@@ -1,0 +1,20 @@
+---
+- hosts: cluster
+  tasks:
+    - name: Update the Raspbian repositories
+      apt:
+        update_cache: yes
+      become: true
+      become_user: root
+
+    - name: Install Java JDK
+      apt:
+        name: openjdk-8-jdk
+      become: true
+      become_user: root
+
+    - name: Install Java JRE
+      apt:
+        name: openjdk-8-jre
+      become: true
+      become_user: root

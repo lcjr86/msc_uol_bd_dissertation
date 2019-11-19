@@ -21,18 +21,30 @@
         <name>dfs.datanode.data.dir</name>
         <value>/opt/hadoop_tmp/hdfs/datanode</value>
         <final>true</final>
+        <description>
+            DFS datanode data directory path
+        </description>
     </property>
     <property>
         <name>dfs.namenode.name.dir</name>
         <value>/opt/hadoop_tmp/hdfs/namenode</value>
         <final>true</final>
+        <description>
+            DFS namenode data directory path
+        </description>
     </property>
     <property>
         <name>dfs.namenode.http-address</name>
         <value>master:50070</value>
+        <description>
+            DFS namenode http address
+        </description>
     </property>
     <property>
         <name>dfs.replication</name>
         <value>1</value>
+        <description>
+            Set the number of DFS replication to 1 (one)
+        </description>
     </property>
 </configuration>

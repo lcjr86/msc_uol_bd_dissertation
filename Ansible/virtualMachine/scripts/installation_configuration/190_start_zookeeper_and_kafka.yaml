@@ -1,0 +1,12 @@
+---
+- hosts: master
+  tasks:
+    - name: Start Zookeeper Service
+      shell: nohup /opt/apache_kafka/kafka_2.12-2.3.0/bin/zookeeper-server-start.sh -daemon /opt/apache_kafka/kafka_2.12-2.3.0/config/zookeeper.properties > /dev/null 2>&1
+      become: true
+      become_user: root
+      
+    - name: Start Kafka Service
+      shell: KAFKA_OPTS="$KAFKA_OPTS -javaagent:/opt/apache_kafka/prometheus/jmx_prometheus_javaagent-0.3.0.jar=7071:/opt/apache_kafka/prometheus/kafka-0-8-2.yml" /opt/apache_kafka/kafka_2.12-2.3.0/bin/kafka-server-start.sh -daemon /opt/apache_kafka/kafka_2.12-2.3.0/config/server.properties &
+      become: true
+      become_user: root

@@ -1,7 +1,0 @@
----
-
-- hosts: localhost
-  tasks:
-    - name: Activate Python Virtual Environment & run python Sensor Emulator code
-      shell: source '/Users/lcjr86/Dropbox/MSc - Liverpool/CKIT-702--Computing Advisor Class/Implementation/msc_uol_dissertation/Python/Clean_influxDB/venv/bin/activate' && cd '/Users/lcjr86/Dropbox/MSc - Liverpool/CKIT-702--Computing Advisor Class/Implementation/msc_uol_dissertation/Python/Clean_influxDB/src/'  &&  python main.py
-      ignore_errors: yes

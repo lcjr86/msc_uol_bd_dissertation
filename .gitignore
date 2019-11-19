@@ -35,3 +35,6 @@ MANIFEST
 # LOG
 
 *.log
+
+# old folder
+old/

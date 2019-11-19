@@ -1,0 +1,17 @@
+---
+- hosts: cluster
+  tasks:
+  - pip:
+      name: kafka_python
+      executable: pip3
+    become: True
+
+  - pip:
+      name: paho_mqtt
+      executable: pip3
+    become: True
+
+  - pip:
+      name: influxdb
+      executable: pip3
+    become: True

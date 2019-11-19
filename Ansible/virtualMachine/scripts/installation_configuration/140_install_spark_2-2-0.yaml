@@ -1,0 +1,34 @@
+---
+- hosts: master
+  tasks:
+    - name: Download Spark 2.2.0
+      get_url:
+        url: https://d3kbcqa49mib13.cloudfront.net/spark-2.2.0-bin-hadoop2.7.tgz
+        dest: /opt/hadoop/spark-2.2.0-bin-hadoop2.7.tgz
+        mode: '0775'
+      become: true
+      become_user: root
+
+    - name: Unzip Spark installaton package
+      unarchive:
+        src: /opt/hadoop/spark-2.2.0-bin-hadoop2.7.tgz
+        dest: /opt/hadoop/
+        remote_src: yes
+      become: true
+      become_user: root
+
+    - name: Create Spark installation directory / folder
+      file:
+        path: /opt/hadoop/spark
+        state: directory
+        mode: '0775'
+      become: true
+      become_user: root
+
+    - name: Move files from 'spark-2.2.0-bin-hadoop2.7' to 'spark' directory / folder
+      copy:
+        remote_src: yes
+        src: /opt/hadoop/spark-2.2.0-bin-hadoop2.7/
+        dest: /opt/hadoop/spark/
+      become: true
+      become_user: root

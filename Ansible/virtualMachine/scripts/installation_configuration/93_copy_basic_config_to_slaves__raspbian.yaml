@@ -1,0 +1,14 @@
+---
+- hosts: slaves
+  tasks:
+    - name: Copy hadoop files from the 'master' node to the 'slaves' nodes
+      synchronize:
+        src: /opt/hadoop/hadoop/
+        dest: /opt/hadoop/hadoop/
+        perms: yes
+        rsync_opts:
+           - "--include=what_needed"
+           - "--exclude=**/**"
+      delegate_to: master
+#      become: true
+#      become_user: root
