@@ -49,4 +49,15 @@ PasswordAuthentication yes
 PermitRootLogin yes
 ```
 
-Reference: https://www.digitalocean.com/community/questions/ssh-copy-id-not-working-permission-denied-publickey
+### Ansible testing:
+
+https://docs.ansible.com/ansible/latest/reference_appendices/test_strategies.html
+
+### under the Ansible host machine (MAC) the 'ansible.cfg' is:
+```
+/usr/local/Cellar/ansible
+```
+
+### Reference: 
+
+https://www.digitalocean.com/community/questions/ssh-copy-id-not-working-permission-denied-publickey

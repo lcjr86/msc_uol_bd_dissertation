@@ -1,89 +1,90 @@
 # msc_uol_dissertation
+
 This repo contain all the material related to the implementation of my dissertation
+
+## /Ansible
+
+### /Ansible/hadoop_2-7-7
+
+Configuration files used to configure Apache Hadoop 2.7.7
+
+### /Ansible/host
+
+All the Ansible playbooks used to install, configure and run:
+
+- Prometheus
+- Grafana
+- InfluxDB
+
+### /Ansible/MQTT_Kafka_bridge
+
+Files that will be use to adjust the ```Python/MQTT_Kafka_bridge``` script to run the right 'test case scenario'
+
+### /Ansible/run_spark
+
+Few scripts that illustrates how to run the (py)Spark Data_processing scripts on the cluster (master node)
+
+### /Ansible/Sensor_Emulator
+
+Files that will be use to adjust the ```Python/Sensor_Emulator``` script to run the right 'test case scenario'
+
+### /Ansible/virtualMachine
+
+All the Ansible playbooks used to install, configure and run:
+
+- Hadoop
+- MQTT Broker
+- Kafka
+- Spark
+- Prometheus exporters
+
+## /Python
+
+### /Python/Clean_influxDB
+
+Application that will clean the 'influxDB' db: 'edge_data'. (Related to the run of the 'test case scenarios')
+
+### /Python/Data_Processing
+
+(py)Spark code that will process the data from the Kafka Broker "in real time"
+
+### /Python/MQTT_Kafka_bridge
+
+Application that will subscribe to the MQTT topics and pubish the messages to Kafka topics
+
+### /Python/Sensor_Emulator
+
+Sensor emulator will be able to generate random data, emulating one or multiples sensors
+
+### /Python/simple_influxDB_test
+
+Simple full end-to-end example of how to use influxDB with Python
+
+### /Python/simple_pySpark_test
+
+Simple example of the usage of (py)Spark, with Spark running under YARN/HADOOP
+
+# RPi_Cluster
+
+This repo will provide all the material regarding how to setup a RaspberryPi cluster
+
+## OS system
+
+Between all the OS available to run on the RaspberryPi, the choose here was Raspbian.
+
+To download the image, please click [here](https://www.raspberrypi.org/downloads/raspbian/).
+
+## References:
+
+https://developer.ibm.com/recipes/tutorials/building-a-hadoop-cluster-with-raspberry-pi/
+https://www.linode.com/docs/databases/hadoop/how-to-install-and-set-up-hadoop-cluster/
+https://www.linode.com/docs/databases/hadoop/install-configure-run-spark-on-top-of-hadoop-yarn-cluster/
+
+
+#### Others
 
 ## Useful commands
 
 System status (Linux): [Terminal $] htop
 
 References: https://www.binarytides.com/linux-command-check-memory-usage/
-
-
-# RPi_Cluster
-This repo will provide all the material regarding how to setup a RaspberryPi cluster
-
-## OS system
-
-Between all the OS available to run on the RaspberryPi, the choose here was Raspbian.
-The reasons for these choice are:
-1.
-2.
-3.
-
-To download the image, please click [here](https://www.raspberrypi.org/downloads/raspbian/).
-
-Other references:
-https://developer.ibm.com/recipes/tutorials/building-a-hadoop-cluster-with-raspberry-pi/
-
-# Apache Kafka - Quickstart
-
-Reference: https://kafka.apache.org/quickstart
-
-## Issues regarding running in background
-
-Reference: https://gist.github.com/piatra/0d6f7ad1435fa7aa790a
-
-
-### Ansible testing:
-
-https://docs.ansible.com/ansible/latest/reference_appendices/test_strategies.html
-
-### under the Ansible host machine (MAC) the 'ansible.cfg' is:
-```
-/usr/local/Cellar/ansible
-```
-
-### Running Spark
-
-1. Become root
-
-```sudo -i```
-
-2. Navegate to the spark folder
-
-```cd /opt/hadoop/spark```
-
-3. Start Spark
-
-```spark-shell```
-
-### Run simple spark test (count the number of non blank lines from a .txt file)
-
-1. Navegate to the folder
-
-```cd /home/hadoop```
-
-2. Get a text as example
-
-- Download the text
-
-```wget -O alice.txt https://www.gutenberg.org/files/11/11-0.txt```
-
-3. create a hdfs folder
-
-```hdfs dfs -mkdir /inputs```
-
-4. move the file to the hdfs folder
-
-```hdfs dfs -put /opt/hadoop/alice.txt /inputs```
-
-5. open Spark (check topic 'running Spark')
-
-6. On Spark, run:
-
-```var input = spark.read.textFile("/inputs/alice.txt")```
-
-Then:
-
-```input.filter(line => line.length()>0).count()```
-
-The output should be something like: ```res0: Long = 2791```
