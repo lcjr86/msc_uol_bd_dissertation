@@ -113,12 +113,14 @@ static domain_name_servers=192.168.56.1
 ## References:
 
 
-https://www.codesandnotes.be/2018/10/16/network-of-virtualbox-instances-with-static-ip-addresses-and-internet-access/ (until 'Port-forwarding')
+- https://www.codesandnotes.be/2018/10/16/network-of-virtualbox-instances-with-static-ip-addresses-and-internet-access/ (until 'Port-forwarding')
 
 
-https://thepihut.com/blogs/raspberry-pi-tutorials/how-to-give-your-raspberry-pi-a-static-ip-address-update
+- https://thepihut.com/blogs/raspberry-pi-tutorials/how-to-give-your-raspberry-pi-a-static-ip-address-update
 
 
-https://developer.ibm.com/recipes/tutorials/building-a-hadoop-cluster-with-raspberry-pi/
-https://www.linode.com/docs/databases/hadoop/how-to-install-and-set-up-hadoop-cluster/
-https://www.linode.com/docs/databases/hadoop/install-configure-run-spark-on-top-of-hadoop-yarn-cluster/
+- https://developer.ibm.com/recipes/tutorials/building-a-hadoop-cluster-with-raspberry-pi/
+
+- https://www.linode.com/docs/databases/hadoop/how-to-install-and-set-up-hadoop-cluster/
+
+- https://www.linode.com/docs/databases/hadoop/install-configure-run-spark-on-top-of-hadoop-yarn-cluster/
