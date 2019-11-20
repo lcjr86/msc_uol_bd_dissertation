@@ -1,4 +1,4 @@
-
+### Import the relevant libraries for that script
 import time
 import logging
 from logging.config import fileConfig
@@ -9,33 +9,47 @@ import configparser
 import os
 from influxdb import InfluxDBClient
 
+import sensor as s
+
+### Define the root directory path
 ROOT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
 
-#fileConfig('../config/logging.ini')
+### Get the logging configuration file
 fileConfig(os.path.join(ROOT_DIR, 'config', 'logging.ini'))
+
+### Instantiate the logger object
 logger = logging.getLogger()
 
 ### Get the 'setup.ini' file handler
 config = configparser.ConfigParser()
-#config.read('../config/setup.ini')
+
+### Load the file to the config handlers
 config.read(os.path.join(ROOT_DIR, 'config', 'setup.ini'))
 
-import sensor as s
-
 class emulator:
+    '''
+
+    '''
 
     def __init__(self, frequency_in_seconds, numSensors, local, store_db):
+        '''
+
+        '''
         self.frequency_in_seconds = int(frequency_in_seconds)
         self.numSensors = int(numSensors)
         self.local = local
         self.store_db = store_db
 
     def run(self):
+        '''
+
+        '''
+
         try:
 
             logger.info('Emulator run triggered')
 
-            ### instanteate the sensors
+            ### instantiate the sensors
             listSensors = []
             for i in range(0, self.numSensors):
                 listSensors.append(s.sensor())
@@ -54,7 +68,7 @@ class emulator:
                 client.drop_database(db_name)
                 client.create_database(db_name)
 
-            ### Generate the data and print
+            ### Generate the data and publish / print
             while True:
 
                 timestamp = datetime.datetime.fromtimestamp(time.time())

@@ -1,21 +1,18 @@
 # MQTT_Kafka_bridge
 
-Simple MQTT (Mosquitto) -> Kafka bridge. Publish in a MQTT topic and have you message republished into a Kafka topic
-
 ## /Python/MQTT_Kafka_bridge/config/
-
 
 ### logging.ini
 
-Configuration file that handles the log configuration (formating, structure, etc...)
+Configuration file that handles the log configuration (formating, structure, etc...).
 
 ### setup.ini
 
 Configuration file that handles:
 
-- The number of the topics 
-- Mosquitto (MQTT Broker) configuration
-- Kafka Broker configuration
+- The number of the topics;
+- Mosquitto (MQTT Broker) configuration;
+- Kafka Broker configuration.
 
 ## /Python/MQTT_Kafka_bridge/log/
 
