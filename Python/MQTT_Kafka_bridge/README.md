@@ -2,11 +2,11 @@
 
 ## ```/Python/MQTT_Kafka_bridge/config/```
 
-### ```logging.ini```
+### ```logging.ini```
 
 Configuration file that handles the log configuration (formating, structure, etc...).
 
-### ```setup.ini```
+### ```setup.ini```
 
 Configuration file that handles:
 
@@ -22,7 +22,7 @@ All the logging when the ```../src/main.py``` is executed
 
 ## ```/Python/MQTT_Kafka_bridge/src/```
 
-### ```main.py```
+### ```main.py```
 
 The MQTT - Kafka bridge execution
 
@@ -40,8 +40,8 @@ Python virtual environment folder
 
 ### Others - Apache Kafka - Quickstart
 
-Reference: https://kafka.apache.org/quickstart
+https://kafka.apache.org/quickstart
 
 #### Others - Issues regarding running in background
 
-Reference: https://gist.github.com/piatra/0d6f7ad1435fa7aa790a
+https://gist.github.com/piatra/0d6f7ad1435fa7aa790a
