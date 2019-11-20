@@ -1,12 +1,12 @@
 # MQTT_Kafka_bridge
 
-## /Python/MQTT_Kafka_bridge/config/
+## ```/Python/MQTT_Kafka_bridge/config/```
 
-### logging.ini
+### ```logging.ini```
 
 Configuration file that handles the log configuration (formating, structure, etc...).
 
-### setup.ini
+### ```setup.ini```
 
 Configuration file that handles:
 
@@ -14,27 +14,27 @@ Configuration file that handles:
 - Mosquitto (MQTT Broker) configuration;
 - Kafka Broker configuration.
 
-## /Python/MQTT_Kafka_bridge/log/
+## ```/Python/MQTT_Kafka_bridge/log/```
 
-### info.log
+### ```info.log```
 
 All the logging when the ```../src/main.py``` is executed
 
-## /Python/MQTT_Kafka_bridge/src/
+## ```/Python/MQTT_Kafka_bridge/src/```
 
-### main.py
+### ```main.py```
 
 The MQTT - Kafka bridge execution
 
-### bridge.py
+### ```bridge.py```
 
 The MQTT - Kafka bridge code implementation
 
-## /Python/MQTT_Kafka_bridge/old/
+## ```/Python/MQTT_Kafka_bridge/old/```
 
 Old scripts that were used for test purposes.
 
-## /Python/MQTT_Kafka_bridge/venv/
+## ```/Python/MQTT_Kafka_bridge/venv/```
 
 Python virtual environment folder
 
