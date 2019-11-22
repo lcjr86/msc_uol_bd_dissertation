@@ -1,6 +1,10 @@
 ---
 
 - hosts: localhost
+
+  vars_files:
+    - ./vars/parameters.yaml
+    
   tasks:
     - name: SENSOR EMULATOR - Replace the 'setup.ini' for the one corresponding to the current 'test case scenario'
       copy:

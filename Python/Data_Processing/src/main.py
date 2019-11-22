@@ -11,6 +11,8 @@ from pyspark import SparkConf
 from pymongo import MongoClient
 from influxdb import InfluxDBClient
 
+from datetime import datetime, timedelta
+
 class ConnectAndFilter():
     '''
         ConnectAndFilter class:
@@ -145,15 +147,22 @@ class ConnectAndFilter():
                 table_name = "sensor_data"
 
                 ### Define the data that will be insert on the InfluxDB
+
+                ### Adjust the date to the UTC time (Influx purpose)
+                date_temp = message[0] + "T" + message[1] + "Z"
+                date_temp = datetime.strptime(date_temp, "%Y-%m-%dT%H:%M:%SZ")
+                date_temp = date_temp - timedelta(hours=1, minutes=0)
+
                 json_body = [
                     {
                         "measurement": table_name,
-                        "time": str(message[0] + "T" + message[1] + "Z"),
+                        "time": str(date_temp),
                         "tags": {
                             "sensorId": str(self.sensorId + 1)
                         },
                         "fields": {
-                            "value": str(message[2])
+                            "value": str(message[2]),
+                            "tic": 1
                         }
                     }
                 ]

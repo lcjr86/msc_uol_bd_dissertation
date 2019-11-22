@@ -2,7 +2,7 @@
 - hosts: cluster
 
   vars_files:
-    - ./vars/parameters.yml
+    - ./vars/parameters.yaml
 
   tasks:
     - name: Copy 'core-site.xml' from localhost to the cluster

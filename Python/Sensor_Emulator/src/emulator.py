@@ -4,7 +4,7 @@ import logging
 from logging.config import fileConfig
 import paho.mqtt.client as paho
 import time
-import datetime
+from datetime import datetime, timedelta
 import configparser
 import os
 from influxdb import InfluxDBClient
@@ -123,7 +123,7 @@ class emulator():
             while True:
                 
                 ### Set the timestamp
-                timestamp = datetime.datetime.fromtimestamp(time.time())
+                timestamp = datetime.fromtimestamp(time.time())
 
                 ### This loop will, for each sensor:
                 ### 1. generate the data
@@ -169,6 +169,10 @@ class emulator():
                         ### Specify the format of the date-time
                         date_format = '%Y-%m-%dT%H:%M:%S%Z'
 
+                        ### InfluxDB works with UTC, so I'm adjusting the timestamp to looks correctly on Grafana
+                        ### At the moment I'm UTC + 1, this is why I'm adjusting -1 hour
+                        timestamp = timestamp - timedelta(hours=1, minutes=0)
+
                         ### Create the json structure to load to 'influxDB'
                         json_body = [
                             {
@@ -178,7 +182,8 @@ class emulator():
                                     "sensorId": str(i + 1)
                                 },
                                 "fields": {
-                                    "value": data
+                                    "value": data,
+                                    "tic": 1
                                 }
                             }
                         ]

@@ -2,6 +2,4 @@
 - hosts: localhost
   tasks:
     - name: Start influxdb
-      shell: nohup influxd -config /usr/local/etc/influxdb.conf &
-      become: true
-      become_user: root
+      shell: nohup influxd -config /usr/local/etc/influxdb.conf </dev/null >/dev/null 2>&1 &
