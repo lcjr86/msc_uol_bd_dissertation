@@ -125,6 +125,11 @@ class emulator():
                 ### Set the timestamp
                 timestamp = datetime.fromtimestamp(time.time())
 
+                if self.store_db:
+                    ### InfluxDB works with UTC, so I'm adjusting the timestamp to looks correctly on Grafana
+                    ### At the moment I'm UTC + 1, this is why I'm adjusting -1 hour
+                    timestamp = timestamp - timedelta(hours=1, minutes=0)
+
                 ### This loop will, for each sensor:
                 ### 1. generate the data
                 ### 2. Create the message (that will be publish to the MQTT topic)
@@ -168,10 +173,6 @@ class emulator():
 
                         ### Specify the format of the date-time
                         date_format = '%Y-%m-%dT%H:%M:%S%Z'
-
-                        ### InfluxDB works with UTC, so I'm adjusting the timestamp to looks correctly on Grafana
-                        ### At the moment I'm UTC + 1, this is why I'm adjusting -1 hour
-                        timestamp = timestamp - timedelta(hours=1, minutes=0)
 
                         ### Create the json structure to load to 'influxDB'
                         json_body = [

@@ -151,7 +151,8 @@ class ConnectAndFilter():
                 ### Adjust the date to the UTC time (Influx purpose)
                 date_temp = message[0] + "T" + message[1] + "Z"
                 date_temp = datetime.strptime(date_temp, "%Y-%m-%dT%H:%M:%SZ")
-                date_temp = date_temp - timedelta(hours=1, minutes=0)
+                #date_temp = date_temp - timedelta(hours=1, minutes=0)
+                date_temp = date_temp - timedelta(hours=0, minutes=0)
 
                 json_body = [
                     {
