@@ -8,7 +8,7 @@
   tasks:
     - name: MQTT KAFKA BRIDGE - Replace the 'setup.ini' for the one corresponding to the current 'test case scenario'
       copy:
-        src: "{{ localhost_MQTT_Kafka_bridge_test_case_scenarios_config_files_path }}/scenario_04_05_06_setup.ini"
+        src: "{{ localhost_MQTT_Kafka_bridge_test_case_scenarios_config_files_path }}/scenario_07_08_09_setup.ini"
         dest: "~/Repositories/msc_uol_dissertation/Python/MQTT_Kafka_bridge/config/setup.ini"
     
     - name: MQTT KAFKA BRIDGE - Start the application
