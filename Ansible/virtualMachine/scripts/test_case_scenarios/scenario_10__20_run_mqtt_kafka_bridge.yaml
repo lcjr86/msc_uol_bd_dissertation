@@ -1,0 +1,18 @@
+---
+
+- hosts: master
+
+  vars_files:
+    - ./vars/parameters.yaml
+
+  tasks:
+    - name: MQTT KAFKA BRIDGE - Replace the 'setup.ini' for the one corresponding to the current 'test case scenario'
+      copy:
+        src: "{{ localhost_MQTT_Kafka_bridge_test_case_scenarios_config_files_path }}/scenario_10_setup.ini"
+        dest: "~/Repositories/msc_uol_dissertation/Python/MQTT_Kafka_bridge/config/setup.ini"
+    
+    - name: MQTT KAFKA BRIDGE - Start the application
+      shell: nohup python3 main.py &
+      args:
+        chdir: ~/Repositories/msc_uol_dissertation/Python/MQTT_Kafka_bridge/src/
+      ignore_errors: yes
