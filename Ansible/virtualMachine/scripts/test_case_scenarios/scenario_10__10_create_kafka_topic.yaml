@@ -38,26 +38,26 @@
       become_user: root
       ignore_errors: yes      
 
-    - name: Create kafka topic 'sensor.7'
-      shell: /opt/apache_kafka/kafka_2.12-2.3.0/bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic sensor.7
-      become: true
-      become_user: root
-      ignore_errors: yes      
+    # - name: Create kafka topic 'sensor.7'
+    #   shell: /opt/apache_kafka/kafka_2.12-2.3.0/bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic sensor.7
+    #   become: true
+    #   become_user: root
+    #   ignore_errors: yes      
 
-    - name: Create kafka topic 'sensor.8'
-      shell: /opt/apache_kafka/kafka_2.12-2.3.0/bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic sensor.8
-      become: true
-      become_user: root
-      ignore_errors: yes      
+    # - name: Create kafka topic 'sensor.8'
+    #   shell: /opt/apache_kafka/kafka_2.12-2.3.0/bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic sensor.8
+    #   become: true
+    #   become_user: root
+    #   ignore_errors: yes      
 
-    - name: Create kafka topic 'sensor.9'
-      shell: /opt/apache_kafka/kafka_2.12-2.3.0/bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic sensor.9
-      become: true
-      become_user: root
-      ignore_errors: yes      
+    # - name: Create kafka topic 'sensor.9'
+    #   shell: /opt/apache_kafka/kafka_2.12-2.3.0/bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic sensor.9
+    #   become: true
+    #   become_user: root
+    #   ignore_errors: yes      
 
-    - name: Create kafka topic 'sensor.10'
-      shell: /opt/apache_kafka/kafka_2.12-2.3.0/bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic sensor.10
-      become: true
-      become_user: root
-      ignore_errors: yes                                    
+    # - name: Create kafka topic 'sensor.10'
+    #   shell: /opt/apache_kafka/kafka_2.12-2.3.0/bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic sensor.10
+    #   become: true
+    #   become_user: root
+    #   ignore_errors: yes                                    
