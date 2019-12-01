@@ -2,5 +2,5 @@
 - import_playbook: scenario_04_05_06__10_create_kafka_topic.yaml
 - import_playbook: scenario_04_05_06__20_run_mqtt_kafka_bridge.yaml
 - import_playbook: scenario_all__30_clean_influxdb_edge_data.yaml
-#- import_playbook: scenario_01_04_07__run_pyspark_script.yaml
-#- import_playbook: _scenario_01_s1_t5__50_run_sensor_emulator.yaml
+#- import_playbook: scenario_04_05_06__run_pyspark_script.yaml
+#- import_playbook: _scenario_0X_sX_tX__50_run_sensor_emulator.yaml

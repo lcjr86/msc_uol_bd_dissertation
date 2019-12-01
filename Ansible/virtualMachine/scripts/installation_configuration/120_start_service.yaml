@@ -26,4 +26,3 @@
       shell: /opt/hadoop/hadoop/sbin/start-dfs.sh
       become: true
       become_user: root
-

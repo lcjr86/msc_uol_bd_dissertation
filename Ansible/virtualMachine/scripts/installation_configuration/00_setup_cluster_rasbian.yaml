@@ -13,7 +13,6 @@
 - import_playbook: 89_change_hadoop_files_permission.yaml
 - import_playbook: 93_copy_basic_config_to_slaves__raspbian.yaml
 - import_playbook: 103_copy_hadoop_2-7-7_config_files.yaml
-#- import_playbook: 111_format_namenode__raspbian.yaml
 - import_playbook: 116_config_hadoop-env_JAVA_HOME__raspbian.yaml
 - import_playbook: 120_start_service.yaml
 - import_playbook: 140_install_spark_2-2-0.yaml

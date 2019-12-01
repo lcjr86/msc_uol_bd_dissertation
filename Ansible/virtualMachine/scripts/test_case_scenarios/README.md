@@ -1,67 +1,102 @@
 # ```/Ansible/virtualMachine/scripts/test_case_scenarios```
 
-## ```__scenario_01_s1_t5.yaml```
+### ```scenario_all__30_clean_infludb_edge_data.yaml```
 
-This playbook control the scenario with the following configuration:
+Playbook that clean/delete the influxDB 'edge_data' on the host PC.
+This script is called by ```__scenario_01_02_03.yaml```, ```__scenario_04_05_06.yaml``` and ```__scenario_07_08_09.yaml```
 
-- number of sensors: 1
-- frequency that the sensor generates data: 5 seconds
+## ```__scenario_01_02_03.yaml```
 
-## ```__scenario_02_s1_t15.yaml```
+Playbook responsable to 'call' the following scripts:
 
-This playbook control the scenario with the following configuration:
+### ```scenario_01_02_03__10_create_kafka_topic.yaml```
 
-- number of sensors: 1
-- frequency that the sensor generates data: 15 seconds
+Playbook responsable to create 1 kafka topic.
 
-## ```__scenario_03_s1_t60.yaml```
+### ```scenario_01_02_03__20_run_mqtt_kafka_bridge.yaml```
 
-This playbook control the scenario with the following configuration:
+Playbook responsable to run "MQTT-Kafka bridge" for 1 topic.
 
-- number of sensors: 1
-- frequency that the sensor generates data: 60 seconds
+## ```__scenario_04_05_06.yaml```
 
-## ```__scenario_04_s2_t5.yaml```
+Playbook responsable to 'call' the following scripts:
 
-This playbook control the scenario with the following configuration:
+### ```scenario_04_05_06__10_create_kafka_topic.yaml```
 
-- number of sensors: 2
-- frequency that the sensor generates data: 5 seconds
+Playbook responsable to create 2 kafka topics.
 
-## ```__scenario_05_s2_t15.yaml```
+### ```scenario_04_05_06__20_run_mqtt_kafka_bridge.yaml```
 
-This playbook control the scenario with the following configuration:
+Playbook responsable to run "MQTT-Kafka bridge" for 2 topics.
 
-- number of sensors: 2
-- frequency that the sensor generates data: 15 seconds
+## ```__scenario_07_08_09.yaml```
 
-## ```__scenario_06_s2_t60.yaml```
+Playbook responsable to 'call' the following scripts:
 
-This playbook control the scenario with the following configuration:
+### ```scenario_07_08_09__10_create_kafka_topic.yaml```
 
-- number of sensors: 2
-- frequency that the sensor generates data: 60 seconds
+Playbook responsable to create 4 kafka topics.
 
-## ```__scenario_07_s4_t5.yaml```
+### ```scenario_07_08_09__20_run_mqtt_kafka_bridge.yaml```
 
-This playbook control the scenario with the following configuration:
+Playbook responsable to run "MQTT-Kafka bridge" for 4 topics.
 
-- number of sensors: 4
-- frequency that the sensor generates data: 5 seconds
+## Run Sensor Emulator
 
-## ```__scenario_08_s4_t15.yaml```
+## ```_scenario_01_s1_t5__50_run_sensor_emulator.yaml```
 
-This playbook control the scenario with the following configuration:
+Playbook responsable to run the "sensor emulator" with the following configuration:
+- Number of sensors: 1;
+- Frequency for the data generation: each 5 seconds.
 
-- number of sensors: 4
-- frequency that the sensor generates data: 15 seconds
+## ```_scenario_02_s1_t15__50_run_sensor_emulator.yaml```
 
-## ```__scenario_09_s4_t60.yaml```
+Playbook responsable to run the "sensor emulator" with the following configuration:
+- Number of sensors: 1;
+- Frequency for the data generation: each 15 seconds.
 
-This playbook control the scenario with the following configuration:
+## ```_scenario_03_s1_t60__50_run_sensor_emulator.yaml```
 
-- number of sensors: 4
-- frequency that the sensor generates data: 60 seconds
+Playbook responsable to run the "sensor emulator" with the following configuration:
+- Number of sensors: 1;
+- Frequency for the data generation: each 60 seconds.
+
+## ```_scenario_04_s2_t5__50_run_sensor_emulator.yaml```
+
+Playbook responsable to run the "sensor emulator" with the following configuration:
+- Number of sensors: 2;
+- Frequency for the data generation: each 5 seconds.
+
+## ```_scenario_05_s2_t15__50_run_sensor_emulator.yaml```
+
+Playbook responsable to run the "sensor emulator" with the following configuration:
+- Number of sensors: 2;
+- Frequency for the data generation: each 15 seconds.
+
+## ```_scenario_06_s2_t60__50_run_sensor_emulator.yaml```
+
+Playbook responsable to run the "sensor emulator" with the following configuration:
+- Number of sensors: 2;
+- Frequency for the data generation: each 60 seconds.
+
+## ```_scenario_07_s4_t5__50_run_sensor_emulator.yaml```
+
+Playbook responsable to run the "sensor emulator" with the following configuration:
+- Number of sensors: 4;
+- Frequency for the data generation: each 5 seconds.
+
+## ```_scenario_08_s4_t15__50_run_sensor_emulator.yaml```
+
+Playbook responsable to run the "sensor emulator" with the following configuration:
+- Number of sensors: 4;
+- Frequency for the data generation: each 15 seconds.
+
+## ```_scenario_09_s4_t60__50_run_sensor_emulator.yaml```
+
+Playbook responsable to run the "sensor emulator" with the following configuration:
+- Number of sensors: 4;
+- Frequency for the data generation: each 60 seconds.
+
 
 ## ```/Ansible/virtualMachine/scripts/test_case_scenarios/vars```
 
