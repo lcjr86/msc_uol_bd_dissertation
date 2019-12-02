@@ -1,5 +1,13 @@
 ---
 - hosts: localhost
   tasks:
+    - name: Install homebrew
+      shell: ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null
+    
+    - name: update brew
+      shell: brew update
+
+    - name: Install influxDB
+      shell: brew install influxdb 
 
 # Reference: https://docs.influxdata.com/influxdb/v1.7/introduction/installation

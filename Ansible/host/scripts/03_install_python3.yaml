@@ -3,12 +3,11 @@
   tasks:
     - name: Install homebrew
       shell: ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null
-
+    
     - name: update brew
       shell: brew update
 
-    - name: install Prometheus
-      shell: brew install prometheus
+    - name: Install Python3
+      shell: brew install python3 
 
-
-# Reference: https://brewinstall.org/Install-prometheus-on-Mac-with-Brew/
+# Reference: https://programwithus.com/learn-to-code/install-python3-mac/
