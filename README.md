@@ -64,6 +64,9 @@ Simple full end-to-end example of how to use influxDB with Python.
 
 Simple example of the usage of (py)Spark, with Spark running under YARN/HADOOP.
 
+## ```/Test_Case_Scenarios_Results```
+
+All the results (screenshots + .xls with the numbers) collected from the monitoring tool for each test case scenario executed.
 
 # ---------
 
